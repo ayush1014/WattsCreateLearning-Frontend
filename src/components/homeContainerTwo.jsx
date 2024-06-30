@@ -12,17 +12,17 @@ export default function HomeContainerTwo() {
                     <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
                         <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:px-0 lg:py-16">
                             <div>
-                                <div>
+                                {/* <div>
                                     <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-100">
                                         <img src={Logo} className="h-8 w-8" alt="Logo" aria-hidden="true" />
                                     </span>
-                                </div>
+                                </div> */}
 
                                 <div className="mt-6">
 
-                                    <h2 className="text-3xl font-bold tracking-tight text-gray-100">Stay on top of customer support</h2>
+                                    <h2 style={{fontFamily:'Playfair'}} className="text-3xl font-bold tracking-tight text-gray-100">Stay on top of customer support</h2>
                                     <p className="mt-4 text-lg text-gray-100">
-                                        Welcome to Watts Creates Learning (WCL). What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, on their individual strengths and leadership skills.
+                                    Welcome to Watts Creates Learning. What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, and communities on their individual strengths. At Watts Creates Learning, we believe in the transformative power of education. 
                                     </p>
                                 </div>
                             </div>
@@ -30,7 +30,7 @@ export default function HomeContainerTwo() {
                                 <blockquote>
                                     <div>
                                         <p className="text-base text-gray-100">
-                                            &ldquo;At WCL, we believe in the transformative power of education. &rdquo;
+                                            &ldquo;When you choose to partner with Watts Creates Learning, you're not just hiring a consulting firm – you're gaining a trusted and integral extension of your team. &rdquo;
                                         </p>
                                     </div>
                                     <footer className="mt-3">
@@ -42,7 +42,7 @@ export default function HomeContainerTwo() {
                                                     alt=""
                                                 />
                                             </div>
-                                            <div className="text-base font-medium text-gray-300">Fallon Watts, Founder of Watts Creates Learning</div>
+                                            <div className="text-base font-medium text-gray-200">Fallon Watts, Founder of Watts Creates Learning</div>
                                         </div>
                                     </footer>
                                 </blockquote>
@@ -66,36 +66,37 @@ export default function HomeContainerTwo() {
                         <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:px-0 lg:py-32">
                             <div>
                                 <div className="mt-0">
-                                    <div>
+                                    {/* <div>
                                         <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gray-600">
                                             <BriefcaseIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
-                                    </div>
-                                    <h3 className="text-3xl mt-2 font-bold tracking-tight text-gray-200">What is the business for WCL?</h3>
+                                    </div> */}
+                                    <h3 style={{fontFamily:'Playfair'}} className="text-3xl mt-2 font-bold tracking-tight text-gray-200">What We Offer:</h3>
                                     <p className="mt-2 text-lg text-gray-100">
                                         Watts Creates Learning is a professional development, consulting, and education service provider. We specialize in offering a range of services, including but not limited to personal & professional development workshops, program evaluation, team builders, and wellness retreats.
                                     </p>
-                                    <div>
+                                    {/* <div>
                                         <span className="flex h-12 w-12 mt-10 items-center justify-center rounded-xl bg-gray-600">
                                             <ArrowTrendingUpIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
-                                    </div>
-                                    <h3 className="text-3xl mt-2 font-bold tracking-tight text-gray-200">What's our Mission ?</h3>
+                                    </div> */}
+                                    <h3 style={{fontFamily:'Playfair'}} className="text-3xl mt-5 font-bold tracking-tight text-gray-200">Our Mission:</h3>
                                     <p className="mt-2 text-lg text-gray-100">
                                         Empowering individuals and organizations to build upon their goodness and potential. We strive to be catalysts for positive change in relationships, careers, and businesses.
                                     </p>
-                                    <div>
+                                    {/* <div>
                                         <span className="flex h-12 w-12 mt-10 items-center justify-center rounded-xl bg-gray-600">
                                             <ScaleIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
-                                    </div>
-                                    <h3 className="text-3xl mt-2 font-bold tracking-tight text-gray-200">What are WCL's Core Values ?</h3>
-                                    <ul className="mt-2 text-lg text-gray-100" style={{ listStyleType: 'circle' }}>
+                                    </div> */}
+                                    <h3 style={{fontFamily:'Playfair'}} className="text-3xl mt-5 font-bold tracking-tight text-gray-200">Our Core Values:</h3>
+                                    {/* <ul className="mt-2 text-lg text-gray-100" style={{ listStyleType: 'circle' }}> */}
+                                    <ul className="mt-2 text-lg text-gray-100">
                                         <li>Leading with Love</li>
                                         <li>Fostering Growth</li>
                                         <li>Positive Mindset</li>
                                     </ul>
-                                    <div className="mt-6">
+                                    <div className="mt-24">
                                         <a
                                             href="#"
                                             className="inline-flex rounded-lg bg-gray-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-gray-700 hover:ring-gray-700"
