@@ -10,8 +10,8 @@ import AboutContainer from './aboutContainer'
 const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Services', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Services', href: '/services' },
+    { name: 'Contact', href: '/contact' },
 ]
 
 export default function About() {

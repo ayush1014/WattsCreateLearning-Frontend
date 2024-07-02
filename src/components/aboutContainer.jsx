@@ -12,7 +12,7 @@ const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Contact', href: '#' },
+    { name: 'Contact', href: '/contact' },
 ]
 
 const socialIcons = [
@@ -287,7 +287,7 @@ export default function AboutContainer() {
                         <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-20">
                             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                                    <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                                    <h1 style={{fontFamily:'Playfair'}} className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                                         We’re are connecting with people for best consulting.
                                     </h1>
                                     {/* <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
@@ -353,11 +353,11 @@ export default function AboutContainer() {
                 {/* Content section */}
                 <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Story</h2>
+                        <h2 style={{fontFamily:'Playfair'}} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Story</h2>
                         <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                                 {/* <span className='text-xl mb-2 font-semibold tracking-tight text-gray-900 sm:text-2xl'></span> */}
-                                <p className="text-xl leading-8 text-gray-600">
+                                <p  style={{fontFamily:'Playfair'}}  className="text-xl leading-8 text-gray-600">
                                     Empowering Leadership and Personal Growth at Watts Creates Learning
                                 </p>
                                 <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
@@ -372,7 +372,7 @@ export default function AboutContainer() {
                                     </p>
                                 </div>
                             </div>
-                            <div className="lg:flex lg:flex-auto lg:justify-center">
+                            <div style={{fontFamily:'Poppins '}} className="lg:flex lg:flex-auto lg:justify-center">
                                 <dl className="w-64 space-y-8 xl:w-80">
                                     {stats.map((stat) => (
                                         <div key={stat.label} className="flex flex-col-reverse gap-y-4">
@@ -398,12 +398,12 @@ export default function AboutContainer() {
                 {/* Values section */}
                 <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-12 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Work with Mrs.Watts</h2>
-                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                        <h2 style={{fontFamily:'playfair'}} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Work with Mrs.Watts</h2>
+                        <p style={{fontFamily:'playfair'}} className="mt-6 text-lg leading-8 text-gray-600">
                             HI, I’M  FALLON WATTS , the founder of Watts Creates Learning. With a wealth of experience and education in Higher Education and Human Services, I specialize in:
                         </p>
                     </div>
-                    <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                    <dl style={{fontFamily:'playfair'}} className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                         {values.map((value) => (
                             <div key={value.name}>
                                 <dt className="font-semibold text-gray-900">{value.name}</dt>
