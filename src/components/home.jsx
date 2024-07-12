@@ -190,51 +190,7 @@ export default function Home() {
                 <div className='homeBanner'>
                     <HomeBanner />
                 </div>
-                {/* <div className='homeContainerTwo'>
-                    <div className='ContainerTwoContent'>
-                        <ul>
-                            <li>
-                                <img src={learnLogo} alt="Learn" />
-                                <span>Learn</span>
-                                <span style={{fontSize: '35%'}}>Test</span>
-                            </li>
-                            <li>
-                                <img src={EducateLogo} alt="Educate" />
-                                <span>Educate</span>
-                                <span style={{fontSize: '35%'}}>Test</span>
-                            </li>
-                            <li>
-                                <img src={GrowLogo} alt="Grow" />
-                                <span>Grow</span>
-                                <span style={{fontSize: '35%'}}>Test</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div> */}
             </div>
-
-            {/* <div className='secondContainer'>
-                <div className='homeCoverImage'>
-                    <img src={HomeCoverPhoto} style={{ maxHeight: '200vh'}}></img>
-                </div>
-
-                <div className='secondContainerContent'>
-                    <div style={{ width: '100%' }}>
-                        <h2>What is the business:</h2>
-                        <p>Watts Creates Learning is a professional development, consulting, and education service provider. We specialize in offering a range of services, including but not limited to personal & professional development workshops, program evaluation, team builders, and wellness retreats.
-                            At WCL, we believe in the transformative power of education.
-                        </p>
-                    </div>
-                    <div style={{ width: '100%' }}>
-                        <h2>Mission:</h2>
-                        <p>Empowering individuals and organizations to build upon their goodness and potential. We strive to be catalysts for positive change in relationships, careers, and businesses.</p>
-                    </div>
-                    <div style={{ width: '100%' }}>
-                        <h2>Core Values:</h2>
-                        <p>Leading with Love, Fostering Growth, Positive Mindset.</p>
-                    </div>
-                </div>
-            </div> */}
             <div>
                 <HomeContainerTwo />
             </div>

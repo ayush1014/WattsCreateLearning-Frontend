@@ -9,6 +9,7 @@ import { CameraIcon } from '@heroicons/react/20/solid'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Service from '../utilities/service.avif'
 import Apart from '../utilities/apart.avif'
+import HomeBanner from './homeBanner'
 
 const stats = [
   { label: 'Founded', value: '2021' },
@@ -164,9 +165,12 @@ export default function Services() {
             </header>
           </div>
         </div>
+        <div className='homeBanner'>
+          <HomeBanner/>
+        </div>
         <div className='ServicesContainerOne'>
-          <div className="mt-20 overflow-hidden bg-white">
-            <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+          <div className="mt-4 overflow-hidden bg-white">
+            <div className="relative mx-auto max-w-7xl px-6 py-12 lg:px-8">
               <div className="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-gray-50 lg:block" />
               <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
                 <div>
@@ -254,7 +258,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="bg-white py-24 sm:py-32">
+          <div className="bg-white">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div className="lg:pr-4">
