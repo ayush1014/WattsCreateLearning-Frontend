@@ -1,4 +1,4 @@
-.navigation-banner {
+/* .navigation-banner {
     background: url('../utilities/ServicesBanner.png') no-repeat center center;
     background-size: cover;
     width: 100%;
@@ -9,7 +9,6 @@
 
 .ServicesContainerOne {
     background-color: #F1ECE7;
-    /* padding: 10% 8%; */
     padding-top: 8%;
 }
 
@@ -23,15 +22,12 @@
 .text-containerOne {
     width: 50%;
     background-color: #626D7B;
-    /* Set background color */
     color: #ffffff;
-    /* Set text color to white for better readability */
 }
 
 .textP1,
 .textP2 {
     color: #ffffff;
-    /* Ensures text inside the container is white */
 }
 
 .textP1 {
@@ -61,4 +57,4 @@
     width: 100%;
     height: auto;
     border-radius: 5px;
-}
+} */

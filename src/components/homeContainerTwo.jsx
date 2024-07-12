@@ -20,9 +20,9 @@ export default function HomeContainerTwo() {
 
                                 <div className="mt-6">
 
-                                    <h2 style={{fontFamily:'Playfair'}} className="text-3xl font-bold tracking-tight text-gray-100">Stay on top of customer support</h2>
+                                    <h2 style={{fontFamily:'Playfair'}} className="text-3xl font-bold tracking-tight text-gray-100">Welcome to Watts Creates Learning</h2>
                                     <p className="mt-4 text-lg text-gray-100">
-                                    Welcome to Watts Creates Learning. What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, and communities on their individual strengths. At Watts Creates Learning, we believe in the transformative power of education. 
+                                    What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, and communities on their individual strengths. At Watts Creates Learning, we believe in the transformative power of education. 
                                     </p>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ export default function HomeContainerTwo() {
                 </div>
             </div>
             <div>
-                <div style={{ backgroundColor: '#C7A297' }} className="mt-0">
+                <div style={{ backgroundColor: '#C3BAB0' }} className="mt-0">
                     <div className="py-14 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
                         <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:px-0 lg:py-32">
                             <div>

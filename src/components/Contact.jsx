@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Footer from './footer'
+import './Contact.css'
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -171,7 +172,7 @@ export default function Contact() {
                     </DialogPanel>
                 </Dialog>
             </header>
-            <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+            <div className="mx-auto grid max-w-full grid-cols-1 lg:grid-cols-2">
                 <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                     <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
                         <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
@@ -198,7 +199,7 @@ export default function Contact() {
                                 <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
                             </svg>
                         </div>
-                        <h2 style={{fontFamily:'Playfair'}} className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
+                        <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
 
                         </p>
@@ -209,10 +210,31 @@ export default function Contact() {
                                     <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                                 </dt>
                                 <dd>
-                                    Omaha, NE
+                                    4423 R St Omaha, NE 68107
                                     <br />
                                 </dd>
                             </div>
+                            {/* <iframe
+                                    width="450"
+                                    height="250"
+                                    frameBorder="0"
+                                    style={{ border: '0' }}  
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    src="https://www.google.com/maps/embed/v1/MAP_MODE?3a490cb13294e831"
+                                    allowFullScreen>
+                                </iframe> */}
+                            <div class="iframe-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.8065829347142!2d-95.98369032391662!3d41.20419020733855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x879389551ada1997%3A0x35e527db74c5f3d0!2s4423%20R%20St%2C%20Omaha%2C%20NE%2068107%2C%20USA!5e0!3m2!1sen!2sin!4v1720767561851!5m2!1sen!2sin"
+                                    width="600"
+                                    height="450"
+                                    style={{ border: 0 }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                />
+                            </div>
+
                             <div className="flex gap-x-4">
                                 <dt className="flex-none">
                                     <span className="sr-only">Telephone</span>
@@ -231,14 +253,14 @@ export default function Contact() {
                                 </dt>
                                 <dd>
                                     <a className="hover:text-gray-900" href="mailto:create@wattscreates.com">
-                                    create@wattscreates.com
+                                        create@wattscreates.com
                                     </a>
                                 </dd>
                             </div>
                         </dl>
                     </div>
                 </div>
-                <form action="#" method="POST" style={{backgroundColor:'#626D7B'}} className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                <form action="#" method="POST" style={{ backgroundColor: '#626D7B' }} className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
                     <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
@@ -327,3 +349,4 @@ export default function Contact() {
         </div>
     )
 }
+

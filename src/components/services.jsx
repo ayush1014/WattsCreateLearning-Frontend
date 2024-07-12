@@ -5,7 +5,17 @@ import ServicesBanner from '../utilities/ServicesBanner.png'
 import Footer from './footer'
 import './services.css'
 import aboutImg from '../utilities/aboutImg1.jpg'
+import { CameraIcon } from '@heroicons/react/20/solid'
+import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
+import Service from '../utilities/service.avif'
+import Apart from '../utilities/apart.avif'
 
+const stats = [
+  { label: 'Founded', value: '2021' },
+  { label: 'Employees', value: '37' },
+  { label: 'Countries', value: '12' },
+  { label: 'Raised', value: '$25M' },
+]
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -62,15 +72,15 @@ const socialIcons = [
 
 ]
 
-export default function Home() {
+export default function Services() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
     <div className='test'>
       <div>
         <div className='homeContainerOne'>
-          <div className="bg-white ">
-            <header className="navigation-banner  absolute inset-x-0 top-0 z-50">
+          <div className="bg-white">
+            <header className="absolute inset-x-0 top-0 z-50">
               <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
                 <div className="flex gap-x-6 text-gray-500 lg:flex-1">
                   {socialIcons.map((icon) => (
@@ -155,42 +165,188 @@ export default function Home() {
           </div>
         </div>
         <div className='ServicesContainerOne'>
-          <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden bg-gray-100 ring-1 ring-gray-900/10 lg:w-1/2">
-            <svg
-              className="absolute inset-0 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
-              aria-hidden="true"
-            >
-              <defs>
-                <pattern
-                  id="83fd4e5a-9d52-42fc-97b6-718e5d7ee527"
-                  width={200}
-                  height={200}
-                  x="100%"
-                  y={-1}
-                  patternUnits="userSpaceOnUse"
-                >
-                  <path d="M130 200V.5M.5 .5H200" fill="none" />
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" strokeWidth={0} fill="white" />
-              <svg x="100%" y={-1} className="overflow-visible fill-gray-50">
-                <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
-              </svg>
-              <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
-            </svg>
-          </div>
-          <p style={{ fontFamily: 'playfair' }} className='textP1'>Our Services</p>
-          <div className='Services-Intro'>
-            <div className='text-containerOne'>
-              <p style={{ fontFamily: 'playfair' }} className='textP2'>Watts Creates Learning specializes in offering a range of services, including but not limited to personal & professional development workshops, program evaluation, team builders, and wellness retreats. </p>
+          <div className="mt-20 overflow-hidden bg-white">
+            <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+              <div className="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-gray-50 lg:block" />
+              <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
+                <div>
+                  <h3 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">Our Services</h3>
+                </div>
+              </div>
+              <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+                <div className="relative lg:col-start-2 lg:row-start-1">
+                  <svg
+                    fill="none"
+                    width={404}
+                    height={384}
+                    viewBox="0 0 404 384"
+                    aria-hidden="true"
+                    className="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block"
+                  >
+                    <defs>
+                      <pattern
+                        x={0}
+                        y={0}
+                        id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                        width={20}
+                        height={20}
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+                      </pattern>
+                    </defs>
+                    <rect fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" width={404} height={384} />
+                  </svg>
+                  <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
+                    <figure>
+                      <div className="aspect-h-7 aspect-w-12 lg:aspect-none">
+                        <img
+                          alt="Whitney leaning against a railing on a downtown street"
+                          src={Service}
+                          width={1184}
+                          height={1376}
+                          className="rounded-lg object-cover object-center shadow-lg"
+                        />
+                      </div>
+                      <figcaption className="mt-3 flex text-sm text-gray-500">
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div className="mt-8 lg:mt-0">
+                  <div className="mx-auto max-w-prose text-base lg:max-w-none">
+                    <p className="text-lg text-gray-700">
+                      ADD SOME HIGHLIGHTS ON THE SERVICES OF THIS PAGE (Add it Here)
+                    </p>
+                  </div>
+                  <div className="prose prose-indigo mx-auto mt-5 text-gray-900 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+                    <p className='text-2xl'>
+                      Workshops and Training
+                    </p>
+                    <ul className='list-disc text-base'>
+                      <li>Leading With Love & Strength: A workshop series focused on Parenting and leadership.</li>
+                      <li>EmpowerHER: Designed to empower youth girls in various stages of their development.</li>
+                      <li>Gallup Strengths: Leveraging individual strengths to maximize potential.</li>
+                    </ul>
+                    <p className='mt-4 text-2xl'>
+                      Program Evaluation and Data Analysis
+                    </p>
+                    <ul className='list-disc  text-base'>
+                      <li>Comprehensive evaluation processes to measure program effectiveness.</li>
+                      <li>Detailed data analysis to support strategic decision-making.</li>
+                    </ul>
+                    <p className='mt-4 text-2xl'>
+                      Course Development and Facilitation
+                    </p>
+                    <ul className='list-disc  text-base'>
+                      <li>Customized course creation for various academic, personal, and professional needs.</li>
+                      <li>Facilitation of both large and small group sessions to enhance learning experiences.</li>
+                    </ul>
+                    <p className='mt-4 text-2xl'>
+                      Academic and Student Affairs Consulting
+                    </p>
+                    <ul className='list-disc  text-base'>
+                      <li>Expertise in student and academic affairs, including policy management and administrative support.</li>
+                      <li>Guidance on student retention strategies and academic performance improvement.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className='photo-containerOne'>
-              <img src={aboutImg} alt="About us" /> {/* Ensure alt text is used for accessibility */}
+          </div>
+          <div className="bg-white py-24 sm:py-32">
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div className="lg:pr-4">
+                  <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                    <img
+                      alt=""
+                      src={Apart}
+                      className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
+                    />
+                    <div className="absolute inset-0 bg-gray-900 mix-blend-multiply" />
+                    <div
+                      aria-hidden="true"
+                      className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
+                    >
+                      <div
+                        style={{
+                          clipPath:
+                            'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+                        }}
+                        className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#f3f6f4] to-[#bcbcbc] opacity-40"
+                      />
+                    </div>
+                    <figure className="relative isolate">
+                      <svg
+                        fill="none"
+                        viewBox="0 0 162 128"
+                        aria-hidden="true"
+                        className="absolute -left-2 -top-4 -z-10 h-32 stroke-white/20"
+                      >
+                        <path
+                          d="M65.5697 118.507L65.8918 118.89C68.9503 116.314 71.367 113.253 73.1386 109.71C74.9162 106.155 75.8027 102.28 75.8027 98.0919C75.8027 94.237 75.16 90.6155 73.8708 87.2314C72.5851 83.8565 70.8137 80.9533 68.553 78.5292C66.4529 76.1079 63.9476 74.2482 61.0407 72.9536C58.2795 71.4949 55.276 70.767 52.0386 70.767C48.9935 70.767 46.4686 71.1668 44.4872 71.9924L44.4799 71.9955L44.4726 71.9988C42.7101 72.7999 41.1035 73.6831 39.6544 74.6492C38.2407 75.5916 36.8279 76.455 35.4159 77.2394L35.4047 77.2457L35.3938 77.2525C34.2318 77.9787 32.6713 78.3634 30.6736 78.3634C29.0405 78.3634 27.5131 77.2868 26.1274 74.8257C24.7483 72.2185 24.0519 69.2166 24.0519 65.8071C24.0519 60.0311 25.3782 54.4081 28.0373 48.9335C30.703 43.4454 34.3114 38.345 38.8667 33.6325C43.5812 28.761 49.0045 24.5159 55.1389 20.8979C60.1667 18.0071 65.4966 15.6179 71.1291 13.7305C73.8626 12.8145 75.8027 10.2968 75.8027 7.38572C75.8027 3.6497 72.6341 0.62247 68.8814 1.1527C61.1635 2.2432 53.7398 4.41426 46.6119 7.66522C37.5369 11.6459 29.5729 17.0612 22.7236 23.9105C16.0322 30.6019 10.618 38.4859 6.47981 47.558L6.47976 47.558L6.47682 47.5647C2.4901 56.6544 0.5 66.6148 0.5 77.4391C0.5 84.2996 1.61702 90.7679 3.85425 96.8404L3.8558 96.8445C6.08991 102.749 9.12394 108.02 12.959 112.654L12.959 112.654L12.9646 112.661C16.8027 117.138 21.2829 120.739 26.4034 123.459L26.4033 123.459L26.4144 123.465C31.5505 126.033 37.0873 127.316 43.0178 127.316C47.5035 127.316 51.6783 126.595 55.5376 125.148L55.5376 125.148L55.5477 125.144C59.5516 123.542 63.0052 121.456 65.9019 118.881L65.5697 118.507Z"
+                          id="0ef284b8-28c2-426e-9442-8655d393522e"
+                        />
+                        <use x={86} href="#0ef284b8-28c2-426e-9442-8655d393522e" />
+                      </svg>
+                      {/* <img alt="" src="https://tailwindui.com/img/logos/workcation-logo-white.svg" className="h-12 w-auto" />
+                      <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
+                        <p>
+                          “Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare
+                          arcu gravida natoque erat et cursus tortor.”
+                        </p>
+                      </blockquote>
+                      <figcaption className="mt-6 text-sm leading-6 text-gray-300">
+                        <strong className="font-semibold text-white">Judith Rogers,</strong> CEO at Workcation
+                      </figcaption> */}
+                    </figure>
+                  </div>
+                </div>
+                <div>
+                  <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
+                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                      What Sets Us Apart:
+                    </h1>
+                    <div className="max-w-xl">
+                      <ol className="mt-6 list-decimal">
+                        <li className='headings'>Extensive Expertise and Experience</li>
+                        <ul className=' list-disc'>
+                          <li><span className='subheading'>Leadership and Knowledge:</span> Founded by Fallon Watts, an accomplished higher education professional with over a decade of experience, our expertise spans course development, program evaluation, grant management, data analysis, and student affairs.</li>
+                          <li><span className='subheading'>Proven Track Record:</span> Fallon’s achievements include designing impactful student programs and courses, leading committee work such as the Committee on The Status of Women, and implementing efficient administrative processes.</li>
+                        </ul>
+
+                        <li className='headings'>Tailored Solutions</li>
+                        <ul className=' list-disc'>
+                          <li><span className='subheading'>Customized Programs:</span> We specialize in developing bespoke courses and workshops that cater to the unique needs of our clients, ensuring relevant and engaging learning experiences.</li>
+                          <li><span className='subheading'>Personalized Approach:</span> Our services are designed to meet the specific goals and challenges of each organization and individual, fostering a culture of continuous improvement and personal growth.</li>
+                        </ul>
+
+                        <li className='headings'>Comprehensive Services</li>
+                        <ul className=' list-disc'>
+                          <li><span className='subheading'>Diverse Offerings:</span> From academic consulting and leadership workshops to data analysis and program evaluation, we provide a wide range of services to support success.</li>
+                          <li><span className='subheading'>Holistic Development:</span> Our workshops, such as Leading With Love & Strength and EmpowerHER, focus on holistic development, empowering participants to leverage their strengths and achieve their full potential.</li>
+                        </ul>
+
+                        <li className='headings'>Innovative and Impactful</li>
+                        <ul className=' list-disc'>
+                          <li><span className='subheading'>Cutting-Edge Solutions:</span> We leverage the latest tools and technologies to enhance our programs, ensuring that our clients benefit from innovative and effective educational solutions.</li>
+                          <li><span className='subheading'>Measurable Impact:</span> Our focus on data-driven decision-making and thorough program evaluation ensures that our initiatives have a tangible and positive impact on our clients.</li>
+                        </ul>
+                      </ol>
+                    </div>
+                  </div>
+                  <div className="mt-10 flex">
+                    <a href="#" className="text-base font-semibold leading-7 text-indigo-600">
+                      Learn more about our company <span aria-hidden="true">&rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
-      </div>
-      <div>
       </div>
       <div>
         <Footer />

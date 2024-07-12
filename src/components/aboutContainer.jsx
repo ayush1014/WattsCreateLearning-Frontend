@@ -6,7 +6,38 @@ import ImgAboutOne from '../utilities/aboutImg1.jpg'
 import ImgAboutTwo from '../utilities/IMG_0567.jpg'
 import WattsHeroImg from '../utilities/fallon.jpeg'
 import Footer from './footer'
+import HomeBanner from './homeBanner'
 
+
+const jobOpenings = [
+    {
+        id: 1,
+        role: 'Full-time designer',
+        href: '#',
+        description:
+            'Quos sunt ad dolore ullam qui. Enim et quisquam dicta molestias. Corrupti quo voluptatum eligendi autem labore.',
+        salary: '$75,000 USD',
+        location: 'San Francisco, CA',
+    },
+    {
+        id: 2,
+        role: 'Laravel developer',
+        href: '#',
+        description:
+            'Et veniam et officia dolorum rerum. Et voluptas consequatur magni sapiente amet voluptates dolorum. Ut porro aut eveniet.',
+        salary: '$125,000 USD',
+        location: 'San Francisco, CA',
+    },
+    {
+        id: 3,
+        role: 'React Native developer',
+        href: '#',
+        description:
+            'Veniam ipsam nisi quas architecto eos non voluptatem in nemo. Est occaecati nihil omnis delectus illum est.',
+        salary: '$105,000 USD',
+        location: 'San Francisco, CA',
+    },
+]
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -245,6 +276,9 @@ export default function AboutContainer() {
             </header>
 
             <main className="isolate">
+                <div className='mt-24'>
+                    <HomeBanner />
+                </div>
                 {/* Hero section */}
                 <div className="relative isolate -z-10">
                     <svg
@@ -284,12 +318,9 @@ export default function AboutContainer() {
                         />
                     </div>
                     <div className="overflow-hidden">
-                        <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-20">
+                        <div className="mx-auto max-w-7xl px-6 pb-12 pt-14 sm:pt-12 lg:px-8 lg:pt-20">
                             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
                                 <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                                    <h1 style={{fontFamily:'Playfair'}} className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                                        We’re are connecting with people for best consulting.
-                                    </h1>
                                     {/* <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
                                         Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et
                                         labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt
@@ -297,8 +328,8 @@ export default function AboutContainer() {
                                         aliqua.
                                     </p> */}
                                 </div>
-                                <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-                                    <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+                                <div className="flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+                                    {/* <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                                         <div className="relative">
                                             <img
                                                 src={ImgAboutOne}
@@ -307,8 +338,8 @@ export default function AboutContainer() {
                                             />
                                             <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                                         </div>
-                                    </div>
-                                    <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+                                    </div> */}
+                                    {/* <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                                         <div className="relative">
                                             <img
                                                 src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
@@ -325,9 +356,9 @@ export default function AboutContainer() {
                                             />
                                             <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                                         </div>
-                                    </div>
-                                    <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-                                        <div className="relative">
+                                    </div> */}
+                                    {/* <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0"> */}
+                                    {/* <div className="relative">
                                             <img
                                                 src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
                                                 alt=""
@@ -342,8 +373,8 @@ export default function AboutContainer() {
                                                 className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                             />
                                             <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                                        </div>
-                                    </div>
+                                        </div> */}
+                                    {/* </div> */}
                                 </div>
                             </div>
                         </div>
@@ -353,14 +384,14 @@ export default function AboutContainer() {
                 {/* Content section */}
                 <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                        <h2 style={{fontFamily:'Playfair'}} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Story</h2>
+                        <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Us: Watts Creates Learning</h2>
                         <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                                 {/* <span className='text-xl mb-2 font-semibold tracking-tight text-gray-900 sm:text-2xl'></span> */}
-                                <p  style={{fontFamily:'Playfair'}}  className="text-xl leading-8 text-gray-600">
-                                    Empowering Leadership and Personal Growth at Watts Creates Learning
+                                <p style={{ fontFamily: 'Playfair' }} className="text-xl leading-8 text-gray-600">
+                                    At Watts Creates Learning, we are passionate about empowering individuals, organizations, and communities through tailored educational programs, workshops, and program evaluation. Founded in 2021, by Fallon Watts, an experienced higher education, human services professional, and strengths consultant. Our mission is to empower individuals and organizations to build upon their goodness and potential. We strive to be a catalyst for positive change in relationships, careers, and businesses. While optimizing our core values Leading with Love, Fostering Growth, Positive Mindset  to help get to families, communities, and  organizations to the next level of success.
                                 </p>
-                                <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
+                                {/* <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
                                     <p>
                                         Founded in 2021, Watts Creates Learning specializes in professional development workshops, coaching, and wellness retreats to empower individuals and organizations. Discover our mission-driven services designed to foster growth and leadership.
                                     </p>
@@ -370,9 +401,9 @@ export default function AboutContainer() {
                                     <p className="mt-2">
                                         Our mission is to empower individuals and organizations to build upon their inherent strengths and potential. We are dedicated to being catalysts for positive change in relationships, careers, and businesses.
                                     </p>
-                                </div>
+                                </div> */}
                             </div>
-                            <div style={{fontFamily:'Poppins '}} className="lg:flex lg:flex-auto lg:justify-center">
+                            {/* <div style={{fontFamily:'Poppins '}} className="lg:flex lg:flex-auto lg:justify-center">
                                 <dl className="w-64 space-y-8 xl:w-80">
                                     {stats.map((stat) => (
                                         <div key={stat.label} className="flex flex-col-reverse gap-y-4">
@@ -381,36 +412,133 @@ export default function AboutContainer() {
                                         </div>
                                     ))}
                                 </dl>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
 
                 {/* Image section */}
-                <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+                <div className="mt-8 sm:mt-24 px-8 xl:mx-auto xl:max-w-7xl xl:px-8">
+                    <h2 style={{ fontFamily: 'playfair' }} className="text-3xl mb-12 font-bold tracking-tight text-gray-900 sm:text-4xl">Our Founder: Fallon Watts</h2>
                     <img
                         src={WattsHeroImg}
                         alt=""
-                        className="aspect-[5/3] w-full object-cover xl:rounded-3xl"
+                        className="aspect-[5/3] w-full rounded-xl object-cover xl:rounded-3xl"
                     />
                 </div>
 
                 {/* Values section */}
-                <div className="mx-auto mt-24 max-w-7xl px-6 sm:mt-12 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:mx-0">
-                        <h2 style={{fontFamily:'playfair'}} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Work with Mrs.Watts</h2>
-                        <p style={{fontFamily:'playfair'}} className="mt-6 text-lg leading-8 text-gray-600">
-                            HI, I’M  FALLON WATTS , the founder of Watts Creates Learning. With a wealth of experience and education in Higher Education and Human Services, I specialize in:
+                <div className="mx-auto mt-24 max-w-6xl px-6 sm:mt-12 lg:px-8">
+                    <div className="mx-auto max-w-6xl lg:mx-0">
+                        <p style={{ fontFamily: 'playfair' }} className="mt-6 text-xl leading-8 text-gray-600">
+                            Fallon Watts brings a wealth of experience in customer services, relationship building, facilitation, and program development, from her 15 years of extensive background in higher education and recently the non-profit sector. Fallon combines academic rigor with practical expertise when working with clients. I find great joy in helping individuals discover their greatness, and fulfillment in telling the stories of programs and initiatives through research and data.
                         </p>
                     </div>
-                    <dl style={{fontFamily:'playfair'}} className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                        {values.map((value) => (
-                            <div key={value.name}>
-                                <dt className="font-semibold text-gray-900">{value.name}</dt>
-                                <dd className="mt-1 text-gray-600">{value.description}</dd>
+                </div>
+
+                <div className="overflow-hidden bg-white px-6 py-8 lg:px-8 xl:py-24">
+                    <div className="mx-auto max-w-max lg:max-w-7xl">
+                        <div className="relative z-10 mb-8 md:mb-2 md:px-6">
+                            <div className="max-w-prose text-base lg:max-w-none">
+                                <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
+                                Our Approach
+                                </p>
                             </div>
-                        ))}
-                    </dl>
+                        </div>
+                        <div className="relative">
+                            <svg
+                                fill="none"
+                                width={404}
+                                height={384}
+                                viewBox="0 0 404 384"
+                                aria-hidden="true"
+                                className="absolute right-0 top-0 -mr-20 -mt-20 hidden md:block md:[overflow-anchor:none]"
+                            >
+                                <defs>
+                                    <pattern
+                                        x={0}
+                                        y={0}
+                                        id="95e8f2de-6d30-4b7e-8159-f791729db21b"
+                                        width={20}
+                                        height={20}
+                                        patternUnits="userSpaceOnUse"
+                                    >
+                                        <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+                                    </pattern>
+                                </defs>
+                                <rect fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)" width={404} height={384} />
+                            </svg>
+                            <svg
+                                fill="none"
+                                width={404}
+                                height={384}
+                                viewBox="0 0 404 384"
+                                aria-hidden="true"
+                                className="absolute bottom-0 left-0 -mb-20 -ml-20 hidden md:block md:[overflow-anchor:none]"
+                            >
+                                <defs>
+                                    <pattern
+                                        x={0}
+                                        y={0}
+                                        id="7a00fe67-0343-4a3c-8e81-c145097a3ce0"
+                                        width={20}
+                                        height={20}
+                                        patternUnits="userSpaceOnUse"
+                                    >
+                                        <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+                                    </pattern>
+                                </defs>
+                                <rect fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)" width={404} height={384} />
+                            </svg>
+                            <div className="relative md:bg-white md:p-6">
+                                <div className="lg:grid lg:grid-cols-2 lg:gap-6">
+                                    <div className="prose prose-lg prose-indigo text-gray-500 lg:max-w-none">
+                                        <p className='text-lg mt-8'>
+                                        At Watts Creates Learning, we believe in the transformative power of personalized education. Our approach is grounded in building genuine relationships, fostering open communication, and ensuring that every stakeholder's needs are met. We are dedicated to creating an inclusive learning environment that encourages trust, collaboration, and growth. When you choose to partner with Watts Creates Learning, you’re gaining a trusted extension of your team.
+                                        </p>
+                                        {/* <p>
+                                            Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
+                                            eget. Est augue <a href="#">maecenas</a> risus nulla ultrices congue nunc tortor. Eu leo risus porta
+                                            integer suspendisse sed sit ligula elit.
+                                        </p>
+                                        <ol role="list">
+                                            <li>Integer varius imperdiet sed interdum felis cras in nec nunc.</li>
+                                            <li>Quam malesuada odio ut sit egestas. Elementum at porta vitae.</li>
+                                        </ol>
+                                        <p>
+                                            Amet, eu nulla id molestie quis tortor. Auctor erat justo, sed pellentesque scelerisque interdum
+                                            blandit lectus. Nec viverra amet ac facilisis vestibulum. Vestibulum purus nibh ac ultricies congue.
+                                        </p> */}
+                                    </div>
+                                    <div className="prose prose-lg prose-indigo mt-6 text-gray-500 lg:mt-0">
+                                    <div className="relative">
+                                            <img
+                                                src={ImgAboutTwo}
+                                                alt=""
+                                                className="aspect-[2/3] w-64 m-auto lg:ml-72 rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                                            />
+                                            {/* <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" /> */}
+                                        </div>
+                                        {/* <p>
+                                            Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
+                                            eget. Est augue maecenas risus nulla ultrices congue nunc tortor.
+                                        </p>
+                                        <p>
+                                            Eu leo risus porta integer suspendisse sed sit ligula elit. Elit egestas lacinia sagittis pellentesque
+                                            neque dignissim vulputate sodales. Diam sed mauris felis risus, ultricies mauris netus tincidunt.
+                                            Mauris sit eu ac tellus nibh non eget sed accumsan. Viverra ac sed venenatis pulvinar elit. Cras diam
+                                            quis tincidunt lectus. Non mi vitae, scelerisque felis nisi, netus amet nisl.
+                                        </p>
+                                        <p>
+                                            Eu eu mauris bibendum scelerisque adipiscing et. Justo, elementum consectetur morbi eros, posuere
+                                            ipsum tortor. Eget cursus massa sed velit feugiat sed ut. Faucibus eros mauris morbi aliquam nullam.
+                                            Scelerisque elementum sit magna ullamcorper dignissim pretium.
+                                        </p> */}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Logo cloud */}
@@ -447,72 +575,8 @@ export default function AboutContainer() {
                     </div>
 
                 </div>
-
-                {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:mx-0">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our team</h2>
-                        <p className="mt-6 text-lg leading-8 text-gray-600">
-                            Sit facilis neque ab nulla vel. Cum eos in laudantium. Temporibus eos totam in dolorum. Nemo vel facere
-                            repellendus ut eos dolores similique.
-                        </p>
-                    </div>
-                    <ul
-                        role="list"
-                        className="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6"
-                    >
-                        {team.map((person) => (
-                            <li key={person.name}>
-                                <img className="mx-auto h-24 w-24 rounded-full" src={person.imageUrl} alt="" />
-                                <h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                                <p className="text-sm leading-6 text-gray-600">{person.role}</p>
-                            </li>
-                        ))}
-                    </ul>
-                </div> */}
-
-                {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-                    <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
-                        <p className="mt-2 text-lg leading-8 text-gray-600">
-                            Vel dolorem qui facilis soluta sint aspernatur totam cumque.
-                        </p>
-                    </div>
-                    <div className="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                        {blogPosts.map((post) => (
-                            <article
-                                key={post.id}
-                                className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80"
-                            >
-                                <img src={post.imageUrl} alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
-                                <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
-                                <div className="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-
-                                <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
-                                    <time dateTime={post.datetime} className="mr-8">
-                                        {post.date}
-                                    </time>
-                                    <div className="-ml-4 flex items-center gap-x-4">
-                                        <svg viewBox="0 0 2 2" className="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
-                                            <circle cx={1} cy={1} r={1} />
-                                        </svg>
-                                        <div className="flex gap-x-2.5">
-                                            <img src={post.author.imageUrl} alt="" className="h-6 w-6 flex-none rounded-full bg-white/10" />
-                                            {post.author.name}
-                                        </div>
-                                    </div>
-                                </div>
-                                <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                                    <a href={post.href}>
-                                        <span className="absolute inset-0" />
-                                        {post.title}
-                                    </a>
-                                </h3>
-                            </article>
-                        ))}
-                    </div>
-                </div> */}
             </main>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
