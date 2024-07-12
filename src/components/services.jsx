@@ -283,7 +283,7 @@ export default function Services() {
       alt="Descriptive Alt Text"
       src={Apart}
       className="rounded-lg object-cover object-center shadow-lg"
-      style={{ height: '100%', width: '100%', objectFit: 'cover' }}  // Ensure image covers the full container
+      style={{ height: '100%', width: '100%', objectFit: 'cover' }} 
     />
   </div>
 </figure>
