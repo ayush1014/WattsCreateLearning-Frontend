@@ -7,6 +7,7 @@ import ImgAboutTwo from '../utilities/IMG_0567.jpg'
 import WattsHeroImg from '../utilities/fallon.jpeg'
 import Footer from './footer'
 import HomeBanner from './homeBanner'
+import Logo from '../utilities/wattsLogo.png'
 
 
 const jobOpenings = [
@@ -194,6 +195,9 @@ export default function AboutContainer() {
             {/* Header */}
             <header className="absolute inset-x-0 top-0 z-50 homeContainerOne">
                 <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
+                    <div className='mr-16'>
+                        <img className="h-12 w-12" src={Logo}></img>
+                    </div>
                     <div className="flex gap-x-6 text-gray-500 lg:flex-1">
                         {socialIcons.map((icon) => (
                             <a key={icon.name} href={icon.href} className="-m-1.5 p-1.5">
@@ -441,7 +445,7 @@ export default function AboutContainer() {
                         <div className="relative z-10 mb-8 md:mb-2 md:px-6">
                             <div className="max-w-prose text-base lg:max-w-none">
                                 <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-                                Our Approach
+                                    Our Approach
                                 </p>
                             </div>
                         </div>
@@ -494,7 +498,7 @@ export default function AboutContainer() {
                                 <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                                     <div className="prose prose-lg prose-indigo text-gray-500 lg:max-w-none">
                                         <p className='text-lg mt-8'>
-                                        At Watts Creates Learning, we believe in the transformative power of personalized education. Our approach is grounded in building genuine relationships, fostering open communication, and ensuring that every stakeholder's needs are met. We are dedicated to creating an inclusive learning environment that encourages trust, collaboration, and growth. When you choose to partner with Watts Creates Learning, you’re gaining a trusted extension of your team.
+                                            At Watts Creates Learning, we believe in the transformative power of personalized education. Our approach is grounded in building genuine relationships, fostering open communication, and ensuring that every stakeholder's needs are met. We are dedicated to creating an inclusive learning environment that encourages trust, collaboration, and growth. When you choose to partner with Watts Creates Learning, you’re gaining a trusted extension of your team.
                                         </p>
                                         {/* <p>
                                             Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
@@ -511,7 +515,7 @@ export default function AboutContainer() {
                                         </p> */}
                                     </div>
                                     <div className="prose prose-lg prose-indigo mt-6 text-gray-500 lg:mt-0">
-                                    <div className="relative">
+                                        <div className="relative">
                                             <img
                                                 src={ImgAboutTwo}
                                                 alt=""

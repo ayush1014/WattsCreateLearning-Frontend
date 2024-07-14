@@ -10,6 +10,7 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/2
 import Service from '../utilities/service.avif'
 import Apart from '../utilities/apart.avif'
 import HomeBanner from './homeBanner'
+import Logo from '../utilities/wattsLogo.png'
 
 const stats = [
   { label: 'Founded', value: '2021' },
@@ -83,6 +84,9 @@ export default function Services() {
           <div className="bg-white">
             <header className="absolute inset-x-0 top-0 z-50">
               <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
+                <div className='mr-16'>
+                  <img className="h-12 w-12" src={Logo}></img>
+                </div>
                 <div className="flex gap-x-6 text-gray-500 lg:flex-1">
                   {socialIcons.map((icon) => (
                     <a key={icon.name} href={icon.href} className="-m-1.5 p-1.5">
@@ -165,8 +169,8 @@ export default function Services() {
             </header>
           </div>
         </div>
-        <div className='homeBanner'>
-          <HomeBanner/>
+        <div className='homeBanner mt-4'>
+          <HomeBanner />
         </div>
         <div className='ServicesContainerOne'>
           <div className="mt-4 overflow-hidden bg-white">
@@ -282,15 +286,15 @@ export default function Services() {
                       />
                     </div>
                     <figure>
-  <div className="aspect-h-7 aspect-w-12 lg:aspect-none">
-    <img
-      alt="Descriptive Alt Text"
-      src={Apart}
-      className="rounded-lg object-cover object-center shadow-lg"
-      style={{ height: '100%', width: '100%', objectFit: 'cover' }} 
-    />
-  </div>
-</figure>
+                      <div className="aspect-h-7 aspect-w-12 lg:aspect-none">
+                        <img
+                          alt="Descriptive Alt Text"
+                          src={Apart}
+                          className="rounded-lg object-cover object-center shadow-lg"
+                          style={{ height: '100%', width: '100%', objectFit: 'cover' }}
+                        />
+                      </div>
+                    </figure>
                   </div>
                 </div>
                 <div>

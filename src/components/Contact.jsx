@@ -4,6 +4,7 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Footer from './footer'
 import './Contact.css'
+import Logo from '../utilities/wattsLogo.png'
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -92,6 +93,9 @@ export default function Contact() {
         <div className="relative isolate bg-white">
             <header className="absolute inset-x-0 top-0 z-50 homeContainerOne">
                 <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
+                    <div className='mr-16'>
+                        <img className="h-12 w-12" src={Logo}></img>
+                    </div>
                     <div className="flex gap-x-6 text-gray-500 lg:flex-1">
                         {socialIcons.map((icon) => (
                             <a key={icon.name} href={icon.href} className="-m-1.5 p-1.5">

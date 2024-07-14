@@ -71,7 +71,7 @@ export default function HomeContainerTwo() {
                                             <BriefcaseIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{fontFamily:'Playfair'}} className="text-3xl mt-2 font-bold tracking-tight text-gray-200">What We Offer:</h3>
+                                    <h3 style={{fontFamily:'Playfair'}} className="text-3xl mt-2 font-bold tracking-tight text-gray-200">Our Purpose:</h3>
                                     <p className="mt-2 text-lg text-gray-100">
                                         Watts Creates Learning is a professional development, consulting, and education service provider. We specialize in offering a range of services, including but not limited to personal & professional development workshops, program evaluation, team builders, and wellness retreats.
                                     </p>
