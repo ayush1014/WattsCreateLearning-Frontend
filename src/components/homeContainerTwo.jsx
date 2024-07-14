@@ -82,7 +82,7 @@ export default function HomeContainerTwo() {
                                     </div> */}
                                     <h3 style={{fontFamily:'Playfair'}} className="text-3xl mt-5 font-bold tracking-tight text-gray-200">Our Mission:</h3>
                                     <p className="mt-2 text-lg text-gray-100">
-                                        Empowering individuals, families, communities and organizations. to build upon their goodness and potential. We strive to be catalysts for positive change in relationships, careers, and businesses.
+                                        Empowering individuals, families, communities and organizations to build upon their goodness and potential. We strive to be catalysts for positive change in relationships, careers, and businesses.
                                     </p>
                                     {/* <div>
                                         <span className="flex h-12 w-12 mt-10 items-center justify-center rounded-xl bg-gray-600">
