@@ -312,7 +312,7 @@ export default function Services() {
 
                         <li className='headings'>Tailored Solutions</li>
                         <ul className=' list-disc'>
-                          <li><span className='subheading'>Customized Programs:</span> We specialize in developing bespoke courses and workshops that cater to the unique needs of our clients, ensuring relevant and engaging learning experiences.</li>
+                          <li><span className='subheading'>Customized Programs:</span> We specialize in developing bespoke courses, programs and workshops that cater to the unique needs of our clients, ensuring relevant and engaging learning experiences.</li>
                           <li><span className='subheading'>Personalized Approach:</span> Our services are designed to meet the specific goals and challenges of each organization and individual, fostering a culture of continuous improvement and personal growth.</li>
                         </ul>
 
