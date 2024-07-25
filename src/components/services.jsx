@@ -110,7 +110,14 @@ export default function Services() {
             <header className="absolute inset-x-0 top-0 z-50">
               <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
                 <div className='mr-16'>
-                  <img className="h-12 w-12" src={Logo}></img>
+                  <a href="/" style={{ cursor: 'pointer' }}>
+                    <span className="sr-only">Your Company</span>
+                    <img
+                      className="h-12 w-auto"
+                      src={Logo}
+                      alt="Company Logo"
+                    />
+                  </a>
                 </div>
                 <div className="flex gap-x-6 text-gray-500 lg:flex-1">
                   {socialIcons.map((icon) => (
@@ -131,7 +138,7 @@ export default function Services() {
                 </div>
                 <div className=" hidden lg:flex lg:gap-x-12">
                   {navigation.map((item) => (
-                    <a key={item.name} href={item.href} className="text-lg font-medium leading-6 text-gray-700 nav-item">
+                    <a key={item.name} href={item.href} className="text-xl font-medium leading-6 text-gray-700 nav-item">
                       {item.name}
                     </a>
                   ))}
@@ -149,12 +156,12 @@ export default function Services() {
                 <div className="fixed inset-0 z-50" />
                 <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                   <div className="flex items-center justify-between">
-                    <a href="#" className="-m-1.5 p-1.5">
+                    <a href="/" className="-m-1.5 p-1.5" style={{ cursor: 'pointer' }}>
                       <span className="sr-only">Your Company</span>
                       <img
                         className="h-8 w-auto"
                         src={Logo}
-                        alt=""
+                        alt="Company Logo"
                       />
                     </a>
                     <button
@@ -173,7 +180,7 @@ export default function Services() {
                           <a
                             key={item.name}
                             href={item.href}
-                            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
                           </a>
@@ -334,7 +341,7 @@ export default function Services() {
                     </div>
                   </div>
                   <div className="mt-10 flex">
-                    <a href="mailto:create@wattscreates.com" className="text-lg font-semibold leading-7" style={{color:'#C3BAB0'}}>
+                    <a href="mailto:create@wattscreates.com" className="text-lg font-semibold leading-7" style={{ color: '#C3BAB0' }}>
                       Learn more about our company <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>
