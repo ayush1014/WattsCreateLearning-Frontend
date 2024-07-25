@@ -22,7 +22,7 @@ export default function HomeContainerTwo() {
                                 <div className="mt-6">
 
                                     <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-100">Welcome to <span style={{ fontSize: '135%', color: '#626D7B' }}>Watts Creates Learning</span></h2>
-                                    <p style={{fontSize:'125%', fontWeight:'100'}} className="mt-4 text-2xl sm:text-xl text-gray-100">
+                                    <p style={{fontSize:'135%', fontWeight:'250'}} className="mt-4 text-2xl sm:text-xl text-gray-100">
                                         {/* Welcome to <span className='home-special'>Watts Creates Learning!</span> */}
                                          What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, and communities on their individual strengths. At <span className='home-special'>Watts Creates Learning</span>, we believe in the transformative power of education. <br />
                                         <br />
@@ -82,7 +82,7 @@ export default function HomeContainerTwo() {
                                         </span>
                                     </div> */}
                                     <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-2 font-bold tracking-tight text-gray-200">Our <span style={{ fontSize: '135%', color: '#626D7B' }}>Purpose:</span></h3>
-                                    <p className="mt-2 text-xl lg:text-2xl text-gray-100">
+                                    <p style={{fontSize:'135%', fontWeight:'250'}} className="mt-2 text-xl lg:text-2xl text-gray-100">
                                         Watts Creates Learning is a professional development, consulting, and education service provider. We specialize in offering a range of services, including but not limited to personal & professional development workshops, program evaluation, team builders, and wellness retreats.
                                     </p>
                                     {/* <div>
@@ -91,7 +91,7 @@ export default function HomeContainerTwo() {
                                         </span>
                                     </div> */}
                                     <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-200">Our<span style={{ fontSize: '135%', color: '#626D7B' }}> Mission:</span></h3>
-                                    <p className="mt-2 text-xl lg:text-2xl text-gray-100">
+                                    <p style={{fontSize:'135%', fontWeight:'250'}} className="mt-2 text-xl lg:text-2xl text-gray-100">
                                         Empowering individuals, families, communities and organizations to build upon their goodness and potential. We strive to be catalysts for positive change in relationships, careers, and businesses.
                                     </p>
                                     {/* <div>
@@ -101,7 +101,7 @@ export default function HomeContainerTwo() {
                                     </div> */}
                                     <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-200">Our <span style={{ fontSize: '135%', color: '#626D7B' }}>Core Values:</span></h3>
                                     {/* <ul className="mt-2 text-lg text-gray-100" style={{ listStyleType: 'circle' }}> */}
-                                    <ul className="mt-2 text-lg sm:text-xl text-gray-100">
+                                    <ul style={{fontSize:'135%', fontWeight:'250'}} className="mt-2 text-lg sm:text-xl text-gray-100">
                                         <li>Leading with Love</li>
                                         <li>Fostering Growth</li>
                                         <li>Positive Mindset</li>
