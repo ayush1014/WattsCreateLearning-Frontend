@@ -240,7 +240,7 @@ export default function Services() {
                 </div>
                 <div className="mt-8 lg:mt-0">
                   <div className="mx-auto max-w-prose text-base lg:max-w-none">
-                    <p className="text-2xl text-gray-700">
+                    <p className="text-xl text-gray-700">
                       Unlock Your Potential with Our Expert Services! At Watts Creates Learning, we are dedicated to helping individuals, communities,  and organizations thrive through our comprehensive range of services. Whether you’re a parent, a young woman, an academic institution, or a business, we have the expertise to support your growth and success.  Experience the difference expert guidance can make in unlocking your full potential.
                     </p>
                   </div>
