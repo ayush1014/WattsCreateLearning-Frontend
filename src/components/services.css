@@ -58,3 +58,77 @@
     height: auto;
     border-radius: 5px;
 } */
+
+.head{
+    background-color: #626D7B;
+    color: #fff;
+}
+
+.text-component {
+    display: flex;
+    flex-direction: column; /* Changed from row to column */
+    background-color: #626D7B;
+    align-items: stretch; /* Stretch children to fill the width */
+    position: relative;
+}
+
+.down-icon {
+    position: absolute;
+    right: 10px; /* Adjust right padding for icon placement */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the icon */
+    color: #fff;
+    cursor: pointer; /* Indicates clickable area */
+}
+
+.text-component {
+    display: block; /* changed from flex to block */
+    background-color: #626D7B;
+    color: #fff;
+    margin-bottom: 10px; /* Space between accordion items */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing between title and icon */
+    align-items: center;
+    padding: 10px;
+    position: relative; /* Relative positioning inside flex parent */
+}
+
+.down-icon {
+    transition: transform 0.8s ease;
+}
+
+.content {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0; /* Start with closed state */
+}
+
+ul {
+    margin: 0;
+}
+
+li{
+    font-size: 125%;
+    padding: 11px;
+}
+
+/* .sub-head{
+    color: #C3BAB0;
+    font-size: 120%;
+} */
+
+.subheading{
+    color: #C3BAB0;
+    font-size: 125%;
+    font-weight:bolder;
+}
+
+.special-and {
+    margin: 0 10px; /* Add 10px margin on both sides of the '&' */
+    color: #C3BAB0; /* Example color */
+    font-size: 2em; /* Smaller font size */
+    font-style: italic; /* Italic style for emphasis */
+}

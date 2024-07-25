@@ -77,7 +77,7 @@ const socialIcons = [
     // },
     {
         name: 'LinkedIn',
-        href: '#',
+        href: 'https://www.linkedin.com/company/watts-creates-learning/',
         icon: (props) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                 <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM7.12 20.5H4.56v-9h2.56v9zM5.84 10.06c-.84 0-1.56-.72-1.56-1.56s.72-1.56 1.56-1.56 1.56.72 1.56 1.56-.72 1.56-1.56 1.56zM20.5 20.5h-2.56v-4.34c0-1.04 0-2.38-1.5-2.38-1.5 0-1.72 1.14-1.72 2.3v4.42h-2.56v-9h2.46v1.23h.04c.34-.66 1.18-1.36 2.42-1.36 2.6 0 3.08 1.72 3.08 3.96v5.16h-.02z"></path>
@@ -98,7 +98,7 @@ export default function Contact() {
                     </div>
                     <div className="flex gap-x-6 text-gray-500 lg:flex-1">
                         {socialIcons.map((icon) => (
-                            <a key={icon.name} href={icon.href} className="-m-1.5 p-1.5">
+                            <a key={icon.name} href={icon.href} target="_blank" rel="noopener noreferrer" className="-m-1.5 p-1.5">
                                 {icon.icon({ className: "h-6 w-6" })}
                             </a>
                         ))}
@@ -122,7 +122,7 @@ export default function Contact() {
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                         <a
-                            href="#"
+                            href="mailto:create@wattscreates.com"
                             className="inline-flex rounded-lg bg-gray-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-gray-700 hover:ring-gray-700"
                         >
                             Work with WCL
@@ -137,7 +137,7 @@ export default function Contact() {
                                 <span className="sr-only">Your Company</span>
                                 <img
                                     className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                    src={Logo}
                                     alt=""
                                 />
                             </a>
@@ -162,14 +162,6 @@ export default function Contact() {
                                             {item.name}
                                         </a>
                                     ))}
-                                </div>
-                                <div className="py-6">
-                                    <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                    >
-                                        Log in
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +195,7 @@ export default function Contact() {
                                 <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
                             </svg>
                         </div>
-                        <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl font-bold tracking-tight text-gray-900">Get in touch</h2>
+                        <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Get in <span className='home-special-two'>touch</span></h2>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
 
                         </p>
@@ -268,7 +260,7 @@ export default function Contact() {
                     <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
-                                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-200">
+                                <label htmlFor="first-name" className="block text-lg font-semibold leading-6 text-gray-200">
                                     First name
                                 </label>
                                 <div className="mt-2.5">
@@ -282,7 +274,7 @@ export default function Contact() {
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-200">
+                                <label htmlFor="last-name" className="block text-lg font-semibold leading-6 text-gray-200">
                                     Last name
                                 </label>
                                 <div className="mt-2.5">
@@ -296,7 +288,7 @@ export default function Contact() {
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-200">
+                                <label htmlFor="email" className="block text-lg font-semibold leading-6 text-gray-200">
                                     Email
                                 </label>
                                 <div className="mt-2.5">
@@ -310,7 +302,7 @@ export default function Contact() {
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-200">
+                                <label htmlFor="phone-number" className="block text-lg font-semibold leading-6 text-gray-200">
                                     Phone number
                                 </label>
                                 <div className="mt-2.5">
@@ -324,7 +316,7 @@ export default function Contact() {
                                 </div>
                             </div>
                             <div className="sm:col-span-2">
-                                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-200">
+                                <label htmlFor="message" className="block text-lg font-semibold leading-6 text-gray-200">
                                     Message
                                 </label>
                                 <div className="mt-2.5">
@@ -341,7 +333,7 @@ export default function Contact() {
                         <div className="mt-8 flex justify-end">
                             <button
                                 type="submit"
-                                className="rounded-md bg-indigo-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-800"
+                                className="rounded-md bg-indigo-900 px-3.5 py-2.5 text-center text-lg font-semibold text-white shadow-sm hover:bg-indigo-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-800"
                             >
                                 Send message
                             </button>

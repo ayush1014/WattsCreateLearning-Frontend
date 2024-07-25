@@ -2,6 +2,7 @@ import { InboxIcon, SparklesIcon, BriefcaseIcon, ArrowTrendingUpIcon, ScaleIcon 
 import imgOffice from '../utilities/WCLHome.png'
 import Logo from '../utilities/wattsLogo.png'
 import imgFocus from '../utilities/homeFocus.png'
+import '../components/home.css'
 
 
 export default function HomeContainerTwo() {
@@ -20,16 +21,25 @@ export default function HomeContainerTwo() {
 
                                 <div className="mt-6">
 
-                                    <h2 style={{fontFamily:'Playfair'}} className="text-3xl font-bold tracking-tight text-gray-100">Welcome to Watts Creates Learning</h2>
-                                    <p className="mt-4 text-lg text-gray-100">
-                                    What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, and communities on their individual strengths. At Watts Creates Learning, we believe in the transformative power of education. 
+                                    <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-100">Welcome to <span style={{ fontSize: '135%', color: '#626D7B' }}>Watts Creates Learning</span></h2>
+                                    <p style={{fontSize:'135%', fontWeight:'550'}} className="mt-4 text-2xl lg:text-xl text-gray-100">
+                                        {/* Welcome to <span className='home-special'>Watts Creates Learning!</span> */}
+                                         What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, and communities on their individual strengths. At <span className='home-special'>Watts Creates Learning</span>, we believe in the transformative power of education. <br />
+                                        <br />
+
+                                        Our journey is driven by the conviction that everyone possesses unique strengths and potential waiting to be unlocked. Through our comprehensive, personalized training sessions, and expert consulting services, we aim to empower our clients to achieve their fullest potential. Whether you're seeking to enhance your leadership skills, empower young girls, or optimize your organization's effectiveness, <span className='home-special'>Watts Creates Learning</span> is here to support you every step of the way.
+                                        <br />
+                                        <br />
+                                        Join us on this exciting journey of growth and transformation. At <span className='home-special'>Watts Creates Learning</span>, we are committed to making a positive impact and fostering a community where learning and development flourish.
+
+
                                     </p>
                                 </div>
                             </div>
-                            <div className="mt-8 border-t border-gray-200 pt-6">
+                            {/* <div className="mt-8 border-t border-gray-200 pt-6">
                                 <blockquote>
                                     <div>
-                                        <p className="text-base text-gray-100">
+                                        <p className="text-md lg:text-xl text-gray-100">
                                             &ldquo;When you choose to partner with Watts Creates Learning, you're not just hiring a consulting firm – you're gaining a trusted and integral extension of your team. &rdquo;
                                         </p>
                                     </div>
@@ -46,7 +56,7 @@ export default function HomeContainerTwo() {
                                         </div>
                                     </footer>
                                 </blockquote>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="mt-12 sm:mt-16 lg:mt-0">
                             <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
@@ -62,7 +72,7 @@ export default function HomeContainerTwo() {
             </div>
             <div>
                 <div style={{ backgroundColor: '#C3BAB0' }} className="mt-0">
-                    <div className="py-14 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+                    <div className="py-14 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-12 lg:px-8">
                         <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:px-0 lg:py-32">
                             <div>
                                 <div className="mt-0">
@@ -71,8 +81,8 @@ export default function HomeContainerTwo() {
                                             <BriefcaseIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{fontFamily:'Playfair'}} className="text-3xl mt-2 font-bold tracking-tight text-gray-200">Our Purpose:</h3>
-                                    <p className="mt-2 text-lg text-gray-100">
+                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-2 font-bold tracking-tight text-gray-200">Our <span style={{ fontSize: '135%', color: '#626D7B' }}>Purpose:</span></h3>
+                                    <p className="mt-2 text-xl lg:text-2xl text-gray-100">
                                         Watts Creates Learning is a professional development, consulting, and education service provider. We specialize in offering a range of services, including but not limited to personal & professional development workshops, program evaluation, team builders, and wellness retreats.
                                     </p>
                                     {/* <div>
@@ -80,8 +90,8 @@ export default function HomeContainerTwo() {
                                             <ArrowTrendingUpIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{fontFamily:'Playfair'}} className="text-3xl mt-5 font-bold tracking-tight text-gray-200">Our Mission:</h3>
-                                    <p className="mt-2 text-lg text-gray-100">
+                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-200">Our<span style={{ fontSize: '135%', color: '#626D7B' }}> Mission:</span></h3>
+                                    <p className="mt-2 text-xl lg:text-2xl text-gray-100">
                                         Empowering individuals, families, communities and organizations to build upon their goodness and potential. We strive to be catalysts for positive change in relationships, careers, and businesses.
                                     </p>
                                     {/* <div>
@@ -89,16 +99,16 @@ export default function HomeContainerTwo() {
                                             <ScaleIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{fontFamily:'Playfair'}} className="text-3xl mt-5 font-bold tracking-tight text-gray-200">Our Core Values:</h3>
+                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-200">Our <span style={{ fontSize: '135%', color: '#626D7B' }}>Core Values:</span></h3>
                                     {/* <ul className="mt-2 text-lg text-gray-100" style={{ listStyleType: 'circle' }}> */}
-                                    <ul className="mt-2 text-lg text-gray-100">
+                                    <ul className="mt-2 text-lg sm:text-xl text-gray-100">
                                         <li>Leading with Love</li>
                                         <li>Fostering Growth</li>
                                         <li>Positive Mindset</li>
                                     </ul>
                                     <div className="mt-24">
                                         <a
-                                            href="#"
+                                            href="/about"
                                             className="inline-flex rounded-lg bg-gray-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-gray-700 hover:ring-gray-700"
                                         >
                                             Learn more about WCL

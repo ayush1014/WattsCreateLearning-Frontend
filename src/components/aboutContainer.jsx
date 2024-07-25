@@ -111,7 +111,7 @@ const socialIcons = [
     // },
     {
         name: 'LinkedIn',
-        href: '#',
+        href: 'https://www.linkedin.com/company/watts-creates-learning/',
         icon: (props) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                 <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM7.12 20.5H4.56v-9h2.56v9zM5.84 10.06c-.84 0-1.56-.72-1.56-1.56s.72-1.56 1.56-1.56 1.56.72 1.56 1.56-.72 1.56-1.56 1.56zM20.5 20.5h-2.56v-4.34c0-1.04 0-2.38-1.5-2.38-1.5 0-1.72 1.14-1.72 2.3v4.42h-2.56v-9h2.46v1.23h.04c.34-.66 1.18-1.36 2.42-1.36 2.6 0 3.08 1.72 3.08 3.96v5.16h-.02z"></path>
@@ -200,7 +200,7 @@ export default function AboutContainer() {
                     </div>
                     <div className="flex gap-x-6 text-gray-500 lg:flex-1">
                         {socialIcons.map((icon) => (
-                            <a key={icon.name} href={icon.href} className="-m-1.5 p-1.5">
+                            <a key={icon.name} href={icon.href} target="_blank" rel="noopener noreferrer" className="-m-1.5 p-1.5">
                                 {icon.icon({ className: "h-6 w-6" })}
                             </a>
                         ))}
@@ -224,7 +224,7 @@ export default function AboutContainer() {
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                         <a
-                            href="#"
+                            href="/contact"
                             className="inline-flex rounded-lg bg-gray-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-gray-700 hover:ring-gray-700"
                         >
                             Work with WCL
@@ -239,7 +239,7 @@ export default function AboutContainer() {
                                 <span className="sr-only">Your Company</span>
                                 <img
                                     className="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                    src={Logo}
                                     alt=""
                                 />
                             </a>
@@ -264,14 +264,6 @@ export default function AboutContainer() {
                                             {item.name}
                                         </a>
                                     ))}
-                                </div>
-                                <div className="py-6">
-                                    <a
-                                        href="#"
-                                        className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                    >
-                                        Log in
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -388,11 +380,11 @@ export default function AboutContainer() {
                 {/* Content section */}
                 <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                        <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Us</h2>
+                        <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">About <span style={{ color: '#C3BAB0' }}>Us</span></h2>
                         <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                                 {/* <span className='text-xl mb-2 font-semibold tracking-tight text-gray-900 sm:text-2xl'></span> */}
-                                <p style={{ fontFamily: 'Playfair' }} className="text-xl leading-8 text-gray-600">
+                                <p style={{ fontFamily: 'Playfair' }} className="text-2xl leading-8 text-gray-600">
                                     At Watts Creates Learning, we are passionate about empowering individuals, organizations, and communities through tailored educational programs, workshops, and program evaluation. Founded in 2021, by Fallon Watts, an experienced higher education, human services professional, and strengths consultant. Our mission is to empower individuals and organizations to build upon their goodness and potential. We strive to be a catalyst for positive change in relationships, careers, and businesses. While optimizing our core values Leading with Love, Fostering Growth, Positive Mindset  to help get to families, communities, and  organizations to the next level of success.
                                 </p>
                                 {/* <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
@@ -423,7 +415,7 @@ export default function AboutContainer() {
 
                 {/* Image section */}
                 <div className="mt-8 sm:mt-24 px-8 xl:mx-auto xl:max-w-7xl xl:px-8">
-                    <h2 style={{ fontFamily: 'playfair' }} className="text-3xl mb-12 font-bold tracking-tight text-gray-900 sm:text-4xl">Our Founder <span className='founderName' style={{color:'#C3BAB0', fontSize:'150%'}}>Fallon Watts</span></h2>
+                    <h2 style={{ fontFamily: 'playfair' }} className="text-3xl mb-12 font-bold tracking-tight text-gray-900 sm:text-5xl">Our Founder <span className='founderName' style={{ color: '#C3BAB0', fontSize: '150%' }}>Fallon Watts</span></h2>
                     <img
                         src={WattsHeroImg}
                         alt=""
@@ -434,18 +426,21 @@ export default function AboutContainer() {
                 {/* Values section */}
                 <div className="mx-auto mt-24 max-w-6xl px-6 sm:mt-12 lg:px-8">
                     <div className="mx-auto max-w-6xl lg:mx-0">
-                        <p style={{ fontFamily: 'playfair' }} className="mt-6 text-xl leading-8 text-gray-600">
-                            Fallon Watts brings a wealth of experience in customer services, relationship building, facilitation, and program development, from her 15 years of extensive background in higher education and recently the non-profit sector. Fallon combines academic rigor with practical expertise when working with clients. I find great joy in helping individuals discover their greatness, and fulfillment in telling the stories of programs and initiatives through research and data.
+                        <p style={{ fontFamily: 'playfair, Cursive', fontWeight: '700' }} className="mt-6 text-2xl leading-8 text-gray-600">
+                            Hey There! I’m Fallon Watts. I’m a wife, a mom to one incredible young man, educator, creator, strengths consultant and the founder, owner of Watts Creates Learning. I love good vibes, positivity, all things HGTV shows, trying New Brunch spots, Bingo, Reading, and enjoying the comforts of my cozy home. <br /><br />
+
+                            I have combined my extensive experience as a higher education professional, faculty member, alongside my nonprofit career, to develop programs, courses, trainings, and workshops that inspire and empower learners of all ages to focus on the good and their individual strengths. <br /><br />
+
+                            My commitment to building genuine and lasting relationships, fostering creativity, and critical thinking has made me a respected figure among my peers and a beloved mentor to my students.
                         </p>
                     </div>
                 </div>
-
                 <div className="overflow-hidden bg-white px-6 py-8 lg:px-8 xl:py-24">
                     <div className="mx-auto max-w-max lg:max-w-7xl">
                         <div className="relative z-10 mb-8 md:mb-2 md:px-6">
                             <div className="max-w-prose text-base lg:max-w-none">
-                                <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-                                    Our Approach
+                                <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl">
+                                    Our <span style={{ color: '#C3BAB0' }}>Approach</span>
                                 </p>
                             </div>
                         </div>
@@ -497,22 +492,9 @@ export default function AboutContainer() {
                             <div className="relative md:bg-white md:p-6">
                                 <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                                     <div className="prose prose-lg prose-indigo text-gray-500 lg:max-w-none">
-                                        <p className='text-lg mt-8'>
+                                        <p className='text-2xl mt-8'>
                                             At Watts Creates Learning, we believe in the transformative power of personalized education. Our approach is grounded in building genuine relationships, fostering open communication, and ensuring that every stakeholder's needs are met. We are dedicated to creating an inclusive learning environment that encourages trust, collaboration, and growth. When you choose to partner with Watts Creates Learning, you’re gaining a trusted extension of your team.
                                         </p>
-                                        {/* <p>
-                                            Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
-                                            eget. Est augue <a href="#">maecenas</a> risus nulla ultrices congue nunc tortor. Eu leo risus porta
-                                            integer suspendisse sed sit ligula elit.
-                                        </p>
-                                        <ol role="list">
-                                            <li>Integer varius imperdiet sed interdum felis cras in nec nunc.</li>
-                                            <li>Quam malesuada odio ut sit egestas. Elementum at porta vitae.</li>
-                                        </ol>
-                                        <p>
-                                            Amet, eu nulla id molestie quis tortor. Auctor erat justo, sed pellentesque scelerisque interdum
-                                            blandit lectus. Nec viverra amet ac facilisis vestibulum. Vestibulum purus nibh ac ultricies congue.
-                                        </p> */}
                                     </div>
                                     <div className="prose prose-lg prose-indigo mt-6 text-gray-500 lg:mt-0">
                                         <div className="relative">
@@ -521,23 +503,7 @@ export default function AboutContainer() {
                                                 alt=""
                                                 className="aspect-[2/3] w-64 m-auto lg:ml-72 rounded-xl bg-gray-900/5 object-cover shadow-lg"
                                             />
-                                            {/* <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" /> */}
                                         </div>
-                                        {/* <p>
-                                            Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim
-                                            eget. Est augue maecenas risus nulla ultrices congue nunc tortor.
-                                        </p>
-                                        <p>
-                                            Eu leo risus porta integer suspendisse sed sit ligula elit. Elit egestas lacinia sagittis pellentesque
-                                            neque dignissim vulputate sodales. Diam sed mauris felis risus, ultricies mauris netus tincidunt.
-                                            Mauris sit eu ac tellus nibh non eget sed accumsan. Viverra ac sed venenatis pulvinar elit. Cras diam
-                                            quis tincidunt lectus. Non mi vitae, scelerisque felis nisi, netus amet nisl.
-                                        </p>
-                                        <p>
-                                            Eu eu mauris bibendum scelerisque adipiscing et. Justo, elementum consectetur morbi eros, posuere
-                                            ipsum tortor. Eget cursus massa sed velit feugiat sed ut. Faucibus eros mauris morbi aliquam nullam.
-                                            Scelerisque elementum sit magna ullamcorper dignissim pretium.
-                                        </p> */}
                                     </div>
                                 </div>
                             </div>
@@ -571,7 +537,7 @@ export default function AboutContainer() {
                     <div className="mx-auto max-w-2xl font-semibold text-xl flex flex-col items-center py-8">
                         <p className="text-center mb-4">For more information please click below</p>
                         <a
-                            href="#"
+                            href="/services"
                             className="inline-flex justify-center rounded-lg bg-gray-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-gray-700 hover:ring-gray-700"
                         >
                             Learn More About WCL

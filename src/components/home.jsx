@@ -85,7 +85,7 @@ const socialIcons = [
     // },
     {
         name: 'LinkedIn',
-        href: '#',
+        href: 'https://www.linkedin.com/company/watts-creates-learning/',
         icon: (props) => (
             <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                 <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM7.12 20.5H4.56v-9h2.56v9zM5.84 10.06c-.84 0-1.56-.72-1.56-1.56s.72-1.56 1.56-1.56 1.56.72 1.56 1.56-.72 1.56-1.56 1.56zM20.5 20.5h-2.56v-4.34c0-1.04 0-2.38-1.5-2.38-1.5 0-1.72 1.14-1.72 2.3v4.42h-2.56v-9h2.46v1.23h.04c.34-.66 1.18-1.36 2.42-1.36 2.6 0 3.08 1.72 3.08 3.96v5.16h-.02z"></path>
@@ -110,7 +110,7 @@ export default function Home() {
                                 </div>
                                 <div className="flex gap-x-6 text-gray-500 lg:flex-1">
                                     {socialIcons.map((icon) => (
-                                        <a key={icon.name} href={icon.href} className="-m-1.5 p-1.5">
+                                        <a key={icon.name} href={icon.href} target="_blank" rel="noopener noreferrer" className="-m-1.5 p-1.5">
                                             {icon.icon({ className: "h-6 w-6" })}
                                         </a>
                                     ))}
@@ -134,7 +134,7 @@ export default function Home() {
                                 </div>
                                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                                     <a
-                                        href="#"
+                                        href="/contact"
                                         className="inline-flex rounded-lg bg-gray-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-gray-700 hover:ring-gray-700"
                                     >
                                         Work with WCL
@@ -149,7 +149,7 @@ export default function Home() {
                                             <span className="sr-only">Your Company</span>
                                             <img
                                                 className="h-8 w-auto"
-                                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                                                src={Logo}
                                                 alt=""
                                             />
                                         </a>
@@ -175,14 +175,6 @@ export default function Home() {
                                                     </a>
                                                 ))}
                                             </div>
-                                            <div className="py-6">
-                                                <a
-                                                    href="#"
-                                                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                                >
-                                                    Log in
-                                                </a>
-                                            </div>
                                         </div>
                                     </div>
                                 </DialogPanel>
@@ -190,11 +182,11 @@ export default function Home() {
                         </header>
                     </div>
                 </div>
-                <div className='homeBanner'>
+                <div className='homeBanner mt-8'>
                     <HomeBanner />
                 </div>
             </div>
-            <div>
+            <div> 
                 <HomeContainerTwo />
             </div>
             <div>

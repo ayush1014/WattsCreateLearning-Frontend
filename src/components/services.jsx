@@ -11,6 +11,31 @@ import Service from '../utilities/service.avif'
 import Apart from '../utilities/apart.avif'
 import HomeBanner from './homeBanner'
 import Logo from '../utilities/wattsLogo.png'
+import { GoChevronDown, GoChevronUp } from 'react-icons/go';  // Ensure you import GoChevronUp
+import servicesWomen from '../utilities/servicesWomen.jpg'
+
+const AccordionItem = ({ title, children }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleIsOpen = () => setIsOpen(!isOpen);
+
+  return (
+    <div className='text-component'>
+      <div className='header' onClick={toggleIsOpen}>
+        <p className='head text-2xl'>{title}</p>
+        <div className='down-icon'>
+          {isOpen ? <GoChevronUp size={30} color="#FFF" /> : <GoChevronDown size={30} color="#FFF" />}
+        </div>
+      </div>
+      <div className='content' style={{ maxHeight: isOpen ? '500px' : '0' }}>
+        <ul className='text-base p-4'>
+          {children}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
 
 const stats = [
   { label: 'Founded', value: '2021' },
@@ -64,7 +89,7 @@ const socialIcons = [
   // },
   {
     name: 'LinkedIn',
-    href: '#',
+    href: 'https://www.linkedin.com/company/watts-creates-learning/',
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM7.12 20.5H4.56v-9h2.56v9zM5.84 10.06c-.84 0-1.56-.72-1.56-1.56s.72-1.56 1.56-1.56 1.56.72 1.56 1.56-.72 1.56-1.56 1.56zM20.5 20.5h-2.56v-4.34c0-1.04 0-2.38-1.5-2.38-1.5 0-1.72 1.14-1.72 2.3v4.42h-2.56v-9h2.46v1.23h.04c.34-.66 1.18-1.36 2.42-1.36 2.6 0 3.08 1.72 3.08 3.96v5.16h-.02z"></path>
@@ -89,7 +114,7 @@ export default function Services() {
                 </div>
                 <div className="flex gap-x-6 text-gray-500 lg:flex-1">
                   {socialIcons.map((icon) => (
-                    <a key={icon.name} href={icon.href} className="-m-1.5 p-1.5">
+                    <a key={icon.name} href={icon.href} target="_blank" rel="noopener noreferrer" className="-m-1.5 p-1.5">
                       {icon.icon({ className: "h-6 w-6" })}
                     </a>
                   ))}
@@ -113,7 +138,7 @@ export default function Services() {
                 </div>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                   <a
-                    href="#"
+                    href="/contact"
                     className="inline-flex rounded-lg bg-gray-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-gray-700 hover:ring-gray-700"
                   >
                     Work with WCL
@@ -128,7 +153,7 @@ export default function Services() {
                       <span className="sr-only">Your Company</span>
                       <img
                         className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        src={Logo}
                         alt=""
                       />
                     </a>
@@ -154,14 +179,6 @@ export default function Services() {
                           </a>
                         ))}
                       </div>
-                      <div className="py-6">
-                        <a
-                          href="#"
-                          className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                        >
-                          Log in
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </DialogPanel>
@@ -178,7 +195,7 @@ export default function Services() {
               <div className="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-gray-50 lg:block" />
               <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
                 <div>
-                  <h3 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl">Our Services</h3>
+                  <h3 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl">Our <span className='home-special'>Services</span></h3>
                 </div>
               </div>
               <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -223,40 +240,32 @@ export default function Services() {
                 </div>
                 <div className="mt-8 lg:mt-0">
                   <div className="mx-auto max-w-prose text-base lg:max-w-none">
-                    <p className="text-lg text-gray-700">
-                      ADD SOME HIGHLIGHTS ON THE SERVICES OF THIS PAGE (Add it Here)
+                    <p className="text-2xl text-gray-700">
+                      Unlock Your Potential with Our Expert Services! At Watts Creates Learning, we are dedicated to helping individuals, communities,  and organizations thrive through our comprehensive range of services. Whether you’re a parent, a young woman, an academic institution, or a business, we have the expertise to support your growth and success.  Experience the difference expert guidance can make in unlocking your full potential.
                     </p>
                   </div>
                   <div className="prose prose-indigo mx-auto mt-5 text-gray-900 lg:col-start-1 lg:row-start-1 lg:max-w-none">
-                    <p className='text-2xl'>
-                      Workshops and Training
-                    </p>
-                    <ul className='list-disc text-base'>
+                    <AccordionItem title={<span>Workshops <span className="special-and">&</span>    Training</span>}>
                       <li>Leading With Love & Strength: A workshop series focused on Parenting and leadership.</li>
                       <li>EmpowerHER: Designed to empower youth girls in various stages of their development.</li>
                       <li>Gallup Strengths: Leveraging individual strengths to maximize potential.</li>
-                    </ul>
-                    <p className='mt-4 text-2xl'>
-                      Program Evaluation and Data Analysis
-                    </p>
-                    <ul className='list-disc  text-base'>
+                    </AccordionItem>
+
+                    <AccordionItem title={<span>Program Evaluation <span className="special-and">&</span> Data Analysis</span>}>
                       <li>Comprehensive evaluation processes to measure program effectiveness.</li>
                       <li>Detailed data analysis to support strategic decision-making.</li>
-                    </ul>
-                    <p className='mt-4 text-2xl'>
-                      Course Development and Facilitation
-                    </p>
-                    <ul className='list-disc  text-base'>
+                    </AccordionItem>
+
+                    <AccordionItem title={<span>Course Development <span className="special-and">&</span> Facilitation</span>}>
                       <li>Customized course creation for various academic, personal, and professional needs.</li>
                       <li>Facilitation of both large and small group sessions to enhance learning experiences.</li>
-                    </ul>
-                    <p className='mt-4 text-2xl'>
-                      Academic and Student Affairs Consulting
-                    </p>
-                    <ul className='list-disc  text-base'>
+                    </AccordionItem>
+
+                    <AccordionItem title={<span>Academic <span className="special-and">&</span> Student Affairs Consulting</span>}>
                       <li>Expertise in student and academic affairs, including policy management and administrative support.</li>
                       <li>Guidance on student retention strategies and academic performance improvement.</li>
-                    </ul>
+                    </AccordionItem>
+
                   </div>
                 </div>
               </div>
@@ -269,10 +278,9 @@ export default function Services() {
                   <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
                     <img
                       alt=""
-                      src={Apart}
-                      className="absolute inset-0 h-full w-full object-cover brightness-125 saturate-0"
+                      src={servicesWomen}
+                      className="absolute inset-0 h-full w-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gray-900 mix-blend-multiply" />
                     <div
                       aria-hidden="true"
                       className="absolute left-1/2 top-1/2 -ml-16 -translate-x-1/2 -translate-y-1/2 transform-gpu blur-3xl"
@@ -282,7 +290,6 @@ export default function Services() {
                           clipPath:
                             'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                         }}
-                        className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#f3f6f4] to-[#bcbcbc] opacity-40"
                       />
                     </div>
                     <figure>
@@ -299,39 +306,35 @@ export default function Services() {
                 </div>
                 <div>
                   <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                      What Sets Us Apart:
+                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                      What Sets <span className='home-special'>Us Apart:</span>
                     </h1>
                     <div className="max-w-xl">
                       <ol className="mt-6 list-decimal">
-                        <li className='headings'>Extensive Expertise and Experience</li>
-                        <ul className=' list-disc'>
+                        <AccordionItem title={<span>Extensive Expertise  <span className="special-and">&</span> Experience</span>}>
                           <li><span className='subheading'>Leadership and Knowledge:</span> Founded by Fallon Watts, an accomplished higher education professional with over a decade of experience, our expertise spans course development, program evaluation, grant management, data analysis, and student affairs.</li>
                           <li><span className='subheading'>Proven Track Record:</span> Fallon’s achievements include designing impactful student programs and courses, leading committee work such as the Committee on The Status of Women, and implementing efficient administrative processes.</li>
-                        </ul>
+                        </AccordionItem>
 
-                        <li className='headings'>Tailored Solutions</li>
-                        <ul className=' list-disc'>
+                        <AccordionItem title="Tailored Solutions">
                           <li><span className='subheading'>Customized Programs:</span> We specialize in developing bespoke courses, programs and workshops that cater to the unique needs of our clients, ensuring relevant and engaging learning experiences.</li>
                           <li><span className='subheading'>Personalized Approach:</span> Our services are designed to meet the specific goals and challenges of each organization and individual, fostering a culture of continuous improvement and personal growth.</li>
-                        </ul>
+                        </AccordionItem>
 
-                        <li className='headings'>Comprehensive Services</li>
-                        <ul className=' list-disc'>
+                        <AccordionItem title="Comprehensive Services">
                           <li><span className='subheading'>Diverse Offerings:</span> From academic consulting and leadership workshops to data analysis and program evaluation, we provide a wide range of services to support success.</li>
                           <li><span className='subheading'>Holistic Development:</span> Our workshops, such as Leading With Love & Strength and EmpowerHER, focus on holistic development, empowering participants to leverage their strengths and achieve their full potential.</li>
-                        </ul>
+                        </AccordionItem>
 
-                        <li className='headings'>Innovative and Impactful</li>
-                        <ul className=' list-disc'>
+                        <AccordionItem title={<span>Innovative <span className="special-and">&</span> Impactful</span>}>
                           <li><span className='subheading'>Cutting-Edge Solutions:</span> We leverage the latest tools and technologies to enhance our programs, ensuring that our clients benefit from innovative and effective educational solutions.</li>
                           <li><span className='subheading'>Measurable Impact:</span> Our focus on data-driven decision-making and thorough program evaluation ensures that our initiatives have a tangible and positive impact on our clients.</li>
-                        </ul>
+                        </AccordionItem>
                       </ol>
                     </div>
                   </div>
                   <div className="mt-10 flex">
-                    <a href="#" className="text-base font-semibold leading-7 text-indigo-600">
+                    <a href="mailto:create@wattscreates.com" className="text-lg font-semibold leading-7" style={{color:'#C3BAB0'}}>
                       Learn more about our company <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>

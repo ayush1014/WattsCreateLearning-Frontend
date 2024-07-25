@@ -1,17 +1,15 @@
 import Carousel from 'react-bootstrap/Carousel';
 import WelcomeBanner from '../utilities/WelcomeBanner.png';
+import WelcomeBanner2 from '../utilities/WelcomeBanner2.jpg';
 
 function HomeBanner() {
     return (
-        <Carousel nextIcon={null} prevIcon={null} nextLabel={null} prevLabel={null}>
-            <Carousel.Item interval={2000}>  
+        <Carousel nextIcon={null} prevIcon={null} nextLabel={null} prevLabel={null} fade={true} interval={2000} wrap={true}>
+            <Carousel.Item>
                 <img src={WelcomeBanner} alt="First slide" />
             </Carousel.Item>
-            <Carousel.Item interval={2000}>
-                <img src={WelcomeBanner} alt="Second slide" />
-            </Carousel.Item>
-            <Carousel.Item interval={2000}>
-                <img src={WelcomeBanner} alt="Third slide" />
+            <Carousel.Item>
+                <img src={WelcomeBanner2} alt="Second slide" />
             </Carousel.Item>
         </Carousel>
     );
