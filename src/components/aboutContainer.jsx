@@ -384,7 +384,7 @@ export default function AboutContainer() {
                         <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                                 {/* <span className='text-xl mb-2 font-semibold tracking-tight text-gray-900 sm:text-2xl'></span> */}
-                                <p style={{ fontFamily: 'Playfair' }} className="text-2xl leading-8 text-gray-600">
+                                <p style={{ fontFamily: 'Playfair' }} className="text-xl leading-8 text-gray-600">
                                     At Watts Creates Learning, we are passionate about empowering individuals, organizations, and communities through tailored educational programs, workshops, and program evaluation. Founded in 2021, by Fallon Watts, an experienced higher education, human services professional, and strengths consultant. Our mission is to empower individuals and organizations to build upon their goodness and potential. We strive to be a catalyst for positive change in relationships, careers, and businesses. While optimizing our core values Leading with Love, Fostering Growth, Positive Mindset  to help get to families, communities, and  organizations to the next level of success.
                                 </p>
                                 {/* <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
@@ -426,7 +426,7 @@ export default function AboutContainer() {
                 {/* Values section */}
                 <div className="mx-auto mt-24 max-w-6xl px-6 sm:mt-12 lg:px-8">
                     <div className="mx-auto max-w-6xl lg:mx-0">
-                        <p style={{ fontFamily: 'playfair, Cursive', fontWeight: '700' }} className="mt-6 text-2xl leading-8 text-gray-600">
+                        <p style={{ fontFamily: 'playfair, Cursive', fontWeight: '700' }} className="mt-6 text-xl leading-8 text-gray-600">
                             Hey There! I’m Fallon Watts. I’m a wife, a mom to one incredible young man, educator, creator, strengths consultant and the founder, owner of Watts Creates Learning. I love good vibes, positivity, all things HGTV shows, trying New Brunch spots, Bingo, Reading, and enjoying the comforts of my cozy home. <br /><br />
 
                             I have combined my extensive experience as a higher education professional, faculty member, alongside my nonprofit career, to develop programs, courses, trainings, and workshops that inspire and empower learners of all ages to focus on the good and their individual strengths. <br /><br />
@@ -492,7 +492,7 @@ export default function AboutContainer() {
                             <div className="relative md:bg-white md:p-6">
                                 <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                                     <div className="prose prose-lg prose-indigo text-gray-500 lg:max-w-none">
-                                        <p className='text-2xl mt-8'>
+                                        <p className='text-xl mt-8'>
                                             At Watts Creates Learning, we believe in the transformative power of personalized education. Our approach is grounded in building genuine relationships, fostering open communication, and ensuring that every stakeholder's needs are met. We are dedicated to creating an inclusive learning environment that encourages trust, collaboration, and growth. When you choose to partner with Watts Creates Learning, you’re gaining a trusted extension of your team.
                                         </p>
                                     </div>
