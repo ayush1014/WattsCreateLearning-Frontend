@@ -20,7 +20,7 @@ const AccordionItem = ({ title, children }) => {
   const toggleIsOpen = () => setIsOpen(!isOpen);
 
   return (
-    <div className='text-component'>
+    <div style={{borderRadius:'20px', padding:'5px'}} className='text-component'>
       <div className='header' onClick={toggleIsOpen}>
         <p className='head text-2xl'>{title}</p>
         <div className='down-icon'>
