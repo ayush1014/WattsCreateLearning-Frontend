@@ -392,7 +392,7 @@ export default function AboutContainer() {
                             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                                 {/* <span className='text-xl mb-2 font-semibold tracking-tight text-gray-900 sm:text-2xl'></span> */}
                                 <p style={{ fontFamily: 'Playfair' }} className="text-xl leading-8 text-gray-600">
-                                    At Watts Creates Learning, we are passionate about empowering individuals, organizations, and communities through tailored educational programs, workshops, and program evaluation. Founded in 2021, by Fallon Watts, an experienced higher education, human services professional, and strengths consultant. Our mission is to empower individuals and organizations to build upon their goodness and potential. We strive to be a catalyst for positive change in relationships, careers, and businesses. While optimizing our core values Leading with Love, Fostering Growth, Positive Mindset  to help get to families, communities, and  organizations to the next level of success.
+                                    At Watts Creates Learning, we are passionate about empowering individuals, organizations, and communities through tailored educational programs, workshops, and program evaluation. Founded in 2021, by Fallon Watts, an experienced higher education, human services professional, and strengths consultant. Our mission is to empower individuals and organizations to build upon their goodness and potential. We strive to be a catalyst for positive change in relationships, careers, and businesses. While optimizing our core values Leading with Love, Fostering Growth, Positive Mindset  to help get families, communities, and  organizations to the next level of success.
                                 </p>
                                 {/* <div className="mt-10 max-w-xl text-base leading-7 text-gray-700">
                                     <p>
@@ -422,7 +422,7 @@ export default function AboutContainer() {
 
                 {/* Image section */}
                 <div className="mt-8 sm:mt-24 px-8 xl:mx-auto xl:max-w-7xl xl:px-8">
-                    <h2 style={{ fontFamily: 'playfair' }} className="text-3xl mb-12 font-bold tracking-tight text-gray-900 sm:text-5xl">Our Founder <span className='founderName' style={{ color: '#C3BAB0', fontSize: '150%' }}>Fallon Watts</span></h2>
+                    <h2 style={{ fontFamily: 'playfair' }} className="text-3xl mb-12 font-bold tracking-tight text-gray-900 sm:text-5xl">Our Founder <span className='founderName' style={{ color: '#C3BAB0', fontSize: '110%' }}>Fallon Watts</span></h2>
                     <img
                         src={WattsHeroImg}
                         alt=""
@@ -547,13 +547,12 @@ export default function AboutContainer() {
                             href="/services"
                             className="inline-flex justify-center rounded-lg bg-gray-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-gray-700 hover:ring-gray-700"
                         >
-                            Learn More About WCL
+                            Learn about our services
                         </a>
                     </div>
 
                 </div>
             </main>
-            <Footer />
         </div>
     )
 }

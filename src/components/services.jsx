@@ -20,15 +20,15 @@ const AccordionItem = ({ title, children }) => {
   const toggleIsOpen = () => setIsOpen(!isOpen);
 
   return (
-    <div style={{borderRadius:'20px', padding:'5px'}} className='text-component'>
+    <div style={{ borderRadius: '20px', padding: '5px' }} className='text-component'>
       <div className='header' onClick={toggleIsOpen}>
         <p className='head text-2xl'>{title}</p>
         <div className='down-icon'>
           {isOpen ? <GoChevronUp size={30} color="#FFF" /> : <GoChevronDown size={30} color="#FFF" />}
         </div>
       </div>
-      <div className='content' style={{ maxHeight: isOpen ? '500px' : '0' }}>
-        <ul className='text-base p-4'>
+      <div className='content' style={{ maxHeight: isOpen ? '1000px' : '0' }}>
+        <ul className='text-lg p-4'>
           {children}
         </ul>
       </div>
@@ -229,7 +229,7 @@ export default function Services() {
                     </defs>
                     <rect fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" width={404} height={384} />
                   </svg>
-                  <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
+                  {/* <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
                     <figure>
                       <div className="aspect-h-7 aspect-w-12 lg:aspect-none">
                         <img
@@ -243,7 +243,7 @@ export default function Services() {
                       <figcaption className="mt-3 flex text-sm text-gray-500">
                       </figcaption>
                     </figure>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="mt-8 lg:mt-0">
                   <div className="mx-auto max-w-prose text-base lg:max-w-none">
@@ -253,9 +253,9 @@ export default function Services() {
                   </div>
                   <div className="prose prose-indigo mx-auto mt-5 text-gray-900 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                     <AccordionItem title={<span>Workshops <span className="special-and">&</span>    Training</span>}>
-                      <li>Leading With Love & Strength: A workshop series focused on Parenting and leadership.</li>
-                      <li>EmpowerHER: Designed to empower youth girls in various stages of their development.</li>
-                      <li>Gallup Strengths: Leveraging individual strengths to maximize potential.</li>
+                      <li><span className='subheading'>Leading With Love & Strength:</span> A workshop series focused on Parenting and leadership.</li>
+                      <li><span className='subheading'>EmpowerHER:</span> Designed to empower youth girls in various stages of their development.</li>
+                      <li><span className='subheading'>Gallup Strengths:</span> Leveraging individual strengths to maximize potential.</li>
                     </AccordionItem>
 
                     <AccordionItem title={<span>Program Evaluation <span className="special-and">&</span> Data Analysis</span>}>
@@ -282,7 +282,8 @@ export default function Services() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div className="lg:pr-4">
-                  <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                  {/* <div> */}
+                  <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10"> 
                     <img
                       alt=""
                       src={servicesWomen}
@@ -324,7 +325,7 @@ export default function Services() {
                         </AccordionItem>
 
                         <AccordionItem title="Tailored Solutions">
-                          <li><span className='subheading'>Customized Programs:</span> We specialize in developing bespoke courses, programs and workshops that cater to the unique needs of our clients, ensuring relevant and engaging learning experiences.</li>
+                          <li><span className='subheading'>Customized Programs:</span> We specialize in developing bespoke courses, programs, and workshops that cater to the unique needs of our clients. Ensuring relevant and engaging learning experiences.</li>
                           <li><span className='subheading'>Personalized Approach:</span> Our services are designed to meet the specific goals and challenges of each organization and individual, fostering a culture of continuous improvement and personal growth.</li>
                         </AccordionItem>
 
@@ -334,14 +335,15 @@ export default function Services() {
                         </AccordionItem>
 
                         <AccordionItem title={<span>Innovative <span className="special-and">&</span> Impactful</span>}>
-                          <li><span className='subheading'>Cutting-Edge Solutions:</span> We leverage the latest tools and technologies to enhance our programs, ensuring that our clients benefit from innovative and effective educational solutions.</li>
+                          <li><span className='subheading'>Cutting-Edge Solutions:</span> We leverage the latest tools and technologies to enhance our programs. Ensuring that our clients benefit from innovative and effective educational solutions.</li>
                           <li><span className='subheading'>Measurable Impact:</span> Our focus on data-driven decision-making and thorough program evaluation ensures that our initiatives have a tangible and positive impact on our clients.</li>
                         </AccordionItem>
                       </ol>
                     </div>
                   </div>
                   <div className="mt-10 flex">
-                    <a href="mailto:create@wattscreates.com" className="text-lg font-semibold leading-7" style={{ color: '#C3BAB0' }}>
+                    {/* <a href="mailto:create@wattscreates.com" className="text-lg font-semibold leading-7" style={{ color: '#C3BAB0' }}> */}
+                    <a href="/contact" className="text-lg font-semibold leading-7" style={{ color: '#C3BAB0' }}>
                       Learn more about our company <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>

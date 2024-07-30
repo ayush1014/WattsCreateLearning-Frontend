@@ -6,6 +6,7 @@ import Logo from '../utilities/wattsLogo.png'
 import '../components/home.css'
 import HomeCoverPhoto from '../utilities/fallon.jpeg'
 import AboutContainer from './aboutContainer'
+import Footer from './footer'
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -20,8 +21,14 @@ export default function About() {
     return (
         <>
         <div>
+            <div>
             <AboutContainer/>
+            </div>
+            <div className='mt-72'>
+            <Footer/>
+            </div>
         </div>
+        
         </>
             )
 }

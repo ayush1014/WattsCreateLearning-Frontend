@@ -35,7 +35,8 @@
     align-items: center;    
     justify-content: center; 
     width: 100%;
-    background-color: #C3BAB0; 
+    /* background-color: #C3BAB0;  */
+    background-color: #fff; 
     padding: 6%;
 }
 
@@ -49,7 +50,7 @@
 .ContainerTwoContent {
     font-size: 150%;
     font-weight:450;
-    color: #fff; 
+    color: black; 
     font-family:Playfair;
     display: flex;
 }
@@ -134,7 +135,8 @@
 .secondContainer{
     width: 100vw;
     height: 75vh;
-    background-color: #C3BAB0;
+    /* background-color: #C3BAB0; */
+    background-color: #fff;
     text-align: center;
     font-family: Playfair;
     padding: 5%;
@@ -184,7 +186,7 @@
 
 .home-special{
     color: #626D7B;
-    font-size: 120%;
+    font-size: 100%;
     font-weight: 800;
 }
 

@@ -4,7 +4,7 @@ import WelcomeBanner2 from '../utilities/WelcomeBanner2.jpg';
 
 function HomeBanner() {
     return (
-        <Carousel nextIcon={null} prevIcon={null} nextLabel={null} prevLabel={null} fade={true} interval={2000} wrap={true}>
+        <Carousel nextIcon={null} prevIcon={null} nextLabel={null} prevLabel={null} fade={true} interval={3000} wrap={true}>
             <Carousel.Item>
                 <img src={WelcomeBanner} alt="First slide" />
             </Carousel.Item>

@@ -2,13 +2,15 @@ import { InboxIcon, SparklesIcon, BriefcaseIcon, ArrowTrendingUpIcon, ScaleIcon 
 import imgOffice from '../utilities/WCLHome.png'
 import Logo from '../utilities/wattsLogo.png'
 import imgFocus from '../utilities/homeFocus.png'
+import homeCover from '../utilities/FOLDER.png'
 import '../components/home.css'
 
 
 export default function HomeContainerTwo() {
     return (
         <>
-            <div style={{ backgroundColor: '#C3BAB0' }} className="relative overflow-hidden pb-32 pt-16">
+            {/* <div style={{ backgroundColor: '#C3BAB0' }} className="relative overflow-hidden pb-32 pt-16"> */}
+            <div style={{ backgroundColor: '#fff' }} className="relative overflow-hidden pb-8 pt-16">
                 <div className="relative">
                     <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
                         <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:px-0 lg:py-16">
@@ -21,8 +23,8 @@ export default function HomeContainerTwo() {
 
                                 <div className="mt-6">
 
-                                    <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-100">Welcome to <span style={{ fontSize: '135%', color: '#626D7B' }}>Watts Creates Learning</span></h2>
-                                    <p style={{fontSize:'135%', fontWeight:'250'}} className="mt-4 text-2xl sm:text-xl text-gray-100">
+                                    <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-600">Welcome to <span style={{ fontSize: '135%', color: '#626D7B' }}>Watts Creates Learning</span></h2>
+                                    <p style={{fontSize:'135%', fontWeight:'250'}} className="mt-4 text-2xl sm:text-xl text-gray-600">
                                         {/* Welcome to <span className='home-special'>Watts Creates Learning!</span> */}
                                          What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, and communities on their individual strengths. At <span className='home-special'>Watts Creates Learning</span>, we believe in the transformative power of education. <br />
                                         <br />
@@ -61,7 +63,7 @@ export default function HomeContainerTwo() {
                         <div className="mt-12 sm:mt-16 lg:mt-0">
                             <div className="-mr-48 pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                                 <img
-                                    className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                                    className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-4/6 lg:w-auto lg:max-w-none"
                                     src={imgOffice}
                                     alt="Inbox user interface"
                                 />
@@ -71,7 +73,7 @@ export default function HomeContainerTwo() {
                 </div>
             </div>
             <div>
-                <div style={{ backgroundColor: '#C3BAB0' }} className="mt-0">
+                <div style={{ backgroundColor: '#fff' }} className="mt-0">
                     <div className="py-14 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-12 lg:px-8">
                         <div className="mx-auto max-w-xl px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:px-0 lg:py-32">
                             <div>
@@ -81,8 +83,8 @@ export default function HomeContainerTwo() {
                                             <BriefcaseIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-2 font-bold tracking-tight text-gray-200">Our <span style={{ fontSize: '135%', color: '#626D7B' }}>Purpose:</span></h3>
-                                    <p style={{fontSize:'135%', fontWeight:'250'}} className="mt-2 text-xl lg:text-2xl text-gray-100">
+                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-2 font-bold tracking-tight text-gray-600">Our <span style={{ fontSize: '135%', color: '#626D7B' }}>Purpose</span></h3>
+                                    <p style={{fontSize:'135%', fontWeight:'250'}} className="mt-2 text-xl lg:text-2xl text-gray-600">
                                         Watts Creates Learning is a professional development, consulting, and education service provider. We specialize in offering a range of services, including but not limited to personal & professional development workshops, program evaluation, team builders, and wellness retreats.
                                     </p>
                                     {/* <div>
@@ -90,8 +92,8 @@ export default function HomeContainerTwo() {
                                             <ArrowTrendingUpIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-200">Our<span style={{ fontSize: '135%', color: '#626D7B' }}> Mission:</span></h3>
-                                    <p style={{fontSize:'135%', fontWeight:'250'}} className="mt-2 text-xl lg:text-2xl text-gray-100">
+                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-600">Our<span style={{ fontSize: '135%', color: '#626D7B' }}> Mission</span></h3>
+                                    <p style={{fontSize:'135%', fontWeight:'250'}} className="mt-2 text-xl lg:text-2xl text-gray-600">
                                         Empowering individuals, families, communities and organizations to build upon their goodness and potential. We strive to be catalysts for positive change in relationships, careers, and businesses.
                                     </p>
                                     {/* <div>
@@ -99,9 +101,9 @@ export default function HomeContainerTwo() {
                                             <ScaleIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-200">Our <span style={{ fontSize: '135%', color: '#626D7B' }}>Core Values:</span></h3>
+                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-600">Our <span style={{ fontSize: '135%', color: '#626D7B' }}>Core Values</span></h3>
                                     {/* <ul className="mt-2 text-lg text-gray-100" style={{ listStyleType: 'circle' }}> */}
-                                    <ul style={{fontSize:'135%', fontWeight:'250'}} className="mt-2 text-lg sm:text-xl text-gray-100">
+                                    <ul style={{fontSize:'135%', fontWeight:'250'}} className="mt-2 text-lg sm:text-xl text-gray-600">
                                         <li>Leading with Love</li>
                                         <li>Fostering Growth</li>
                                         <li>Positive Mindset</li>
@@ -121,7 +123,7 @@ export default function HomeContainerTwo() {
                             <div className="-ml-48 pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
                                 <img
                                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                                    src={imgFocus}
+                                    src={homeCover}
                                     alt="Customer profile user interface"
                                 />
                             </div>
