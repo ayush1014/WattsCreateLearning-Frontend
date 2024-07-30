@@ -498,7 +498,7 @@ export default function AboutContainer() {
                             </svg>
                             <div className="relative md:bg-white md:p-6">
                                 <div className="lg:grid lg:grid-cols-2 lg:gap-6">
-                                    <div className="prose prose-lg prose-indigo text-gray-500 lg:max-w-none">
+                                    <div className="prose prose-lg prose-indigo text-gray-900 lg:max-w-none">
                                         <p className='text-xl mt-8'>
                                             At Watts Creates Learning, we believe in the transformative power of personalized education. Our approach is grounded in building genuine relationships, fostering open communication, and ensuring that every stakeholder's needs are met. We are dedicated to creating an inclusive learning environment that encourages trust, collaboration, and growth. When you choose to partner with Watts Creates Learning, you’re gaining a trusted extension of your team.
                                         </p>
