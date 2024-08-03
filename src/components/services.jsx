@@ -7,7 +7,8 @@ import './services.css'
 import aboutImg from '../utilities/aboutImg1.jpg'
 import { CameraIcon } from '@heroicons/react/20/solid'
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
-import Service from '../utilities/service.avif'
+// import Service from '../utilities/service.avif'
+import Service from '../utilities/serviceNew.jpeg'
 import Apart from '../utilities/apart.avif'
 import HomeBanner from './homeBanner'
 import Logo from '../utilities/wattsLogo.png'
@@ -237,7 +238,7 @@ export default function Services() {
                           src={Service}
                           width={1184}
                           height={1376}
-                          className="rounded-lg object-cover object-center shadow-lg"
+                          className="rounded-xl object-cover object-center shadow-lg"
                         />
                       </div>
                       <figcaption className="mt-3 flex text-sm text-gray-500">
@@ -268,10 +269,10 @@ export default function Services() {
                       <li>Facilitation of both large and small group sessions to enhance learning experiences.</li>
                     </AccordionItem>
 
-                    <AccordionItem title={<span>Academic <span className="special-and">&</span> Student Affairs Consulting</span>}>
+                    {/* <AccordionItem title={<span>Academic <span className="special-and">&</span> Student Affairs Consulting</span>}>
                       <li>Expertise in student and academic affairs, including policy management and administrative support.</li>
                       <li>Guidance on student retention strategies and academic performance improvement.</li>
-                    </AccordionItem>
+                    </AccordionItem> */}
 
                   </div>
                 </div>
@@ -281,12 +282,11 @@ export default function Services() {
           <div className="bg-white">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                <div className="lg:pr-4">
-                  {/* <div> */}
-                  <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10"> 
+                {/* <div className="lg:pr-4"> */}
+                  {/* <div className="relative overflow-hidden rounded-3xl bg-gray-900 px-6 pb-9 pt-64 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10"> 
                     <img
                       alt=""
-                      src={servicesWomen}
+                      src={Service}
                       className="absolute inset-0 h-full w-full object-cover"
                     />
                     <div
@@ -310,8 +310,8 @@ export default function Services() {
                         />
                       </div>
                     </figure>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
                 <div>
                   <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
                     <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
@@ -342,8 +342,8 @@ export default function Services() {
                     </div>
                   </div>
                   <div className="mt-10 flex">
-                    {/* <a href="mailto:create@wattscreates.com" className="text-lg font-semibold leading-7" style={{ color: '#C3BAB0' }}> */}
-                    <a href="/contact" className="text-lg font-semibold leading-7" style={{ color: '#C3BAB0' }}>
+                    {/* <a href="mailto:create@wattscreates.com" className="text-xl font-semibold leading-7" style={{ color: '#C3BAB0' }}> */}
+                    <a href="/contact" className="text-xl font-semibold leading-7" style={{ color: '#C3BAB0' }}>
                       Learn more about our company <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>

@@ -342,6 +342,7 @@ export default function Contact() {
                             <button
                                 type="submit"
                                 className="rounded-md bg-indigo-700 px-3.5 py-2.5 text-center text-lg font-semibold text-white shadow-sm hover:bg-indigo-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-800"
+                                style={{backgroundColor:'#C3BAB0'}}
                             >
                                 Send message
                             </button>
