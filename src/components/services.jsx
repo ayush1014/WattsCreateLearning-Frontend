@@ -17,6 +17,7 @@ import servicesWomen from '../utilities/servicesWomen.jpg'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { SocialIcon } from 'react-social-icons'
+import Testimonials from './Testimonials'
 
 const AccordionItem = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -309,9 +310,9 @@ export default function Services() {
                   </div>
                   <div className="prose prose-indigo mx-auto mt-5 text-gray-900 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                     <AccordionItem title={<span>Workshops <span className="special-and">&</span>    Training</span>}>
-                      <li><span className='subheading'>Leading With Love & Strength:</span> A workshop series focused on Parenting and leadership.</li>
-                      <li><span className='subheading'>EmpowerHER:</span> Designed to empower youth girls in various stages of their development.</li>
-                      <li><span className='subheading'>Gallup Strengths:</span> Leveraging individual strengths to maximize potential.</li>
+                      <li><span className='subheading'>Leading With Love & Strength:</span> The six-week workshop explores the relationship between parenting, leadership, and personal strengths. Participants will gain insights into using their Clifton Strengths to excel as individuals, parents, and leaders.</li>
+                      <li><span className='subheading'>EmpowerHER:</span> The four-week workshop introduces girls to the Clifton Strengths Explorer assessment. Helping them leverage their unique strengths for success in academics, social interactions, and future careers. It aims to empower them to become confident, self-aware individuals who positively impact their lives and communities.</li>
+                      <li><span className='subheading'>Gallup Strengths:</span> The introductory workshop provides a basic overview of the history and impact of strengths-based psychology. Participants identify and discuss methods for applying strengths-based knowledge to leverage their individual strengths to maximize potential.</li>
                     </AccordionItem>
 
                     <AccordionItem title={<span>Program Evaluation <span className="special-and">&</span> Data Analysis</span>}>
@@ -409,6 +410,7 @@ export default function Services() {
 
         </div>
       </div>
+        <Testimonials/>
       <div>
         <Footer />
       </div>
