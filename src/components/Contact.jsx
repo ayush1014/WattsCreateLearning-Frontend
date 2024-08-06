@@ -133,7 +133,7 @@ export default function Contact() {
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                         <a
-                            href="/contact"
+                            href="mailto:create@wattscreates.com"
                             className="inline-flex rounded-lg bg-gray-500 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-gray-700 hover:ring-gray-700"
                         >
                             Work with WCL
