@@ -185,6 +185,12 @@
 }
 
 .home-special{
+    color: rgba(35,71,130);
+    font-size: 100%;
+    font-weight: 800;
+}
+
+.home-homespecial{
     color: #C3BAB0;
     font-size: 100%;
     font-weight: 800;

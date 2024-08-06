@@ -26,13 +26,13 @@ export default function HomeContainerTwo() {
                                     <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl sm:text-5xl font-bold tracking-tight text-gray-600">Welcome to <span style={{ fontSize: '135%', color: '#C3BAB0' }}>Watts Creates Learning</span></h2>
                                     <p style={{ fontSize: '135%', fontWeight: '250' }} className="mt-4 text-2xl sm:text-xl text-gray-600">
                                         {/* Welcome to <span className='home-special'>Watts Creates Learning!</span> */}
-                                        What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, and communities on their individual strengths. At <span className='home-special'>Watts Creates Learning</span>, we believe in the transformative power of education. <br />
+                                        What began as a passion project in 2021 has evolved into a dedicated effort to educate individuals, families, organizations, and communities on their individual strengths. At <span className='home-homespecial'>Watts Creates Learning</span>, we believe in the transformative power of education. <br />
                                         <br />
 
-                                        Our journey is driven by the conviction that everyone possesses unique strengths and potential waiting to be unlocked. Through our comprehensive, personalized training sessions, and expert consulting services, we aim to empower our clients to achieve their fullest potential. Whether you're seeking to enhance your leadership skills, empower young girls, or optimize your organization's effectiveness, <span className='home-special'>Watts Creates Learning</span> is here to support you every step of the way.
+                                        Our journey is driven by the conviction that everyone possesses unique strengths and potential waiting to be unlocked. Through our comprehensive, personalized training sessions, and expert consulting services, we aim to empower our clients to achieve their fullest potential. Whether you're seeking to enhance your leadership skills, empower young girls, or optimize your organization's effectiveness, <span className='home-homespecial'>Watts Creates Learning</span> is here to support you every step of the way.
                                         <br />
                                         <br />
-                                        Join us on this exciting journey of growth and transformation. At <span className='home-special'>Watts Creates Learning</span>, we are committed to making a positive impact and fostering a community where learning and development flourish.
+                                        Join us on this exciting journey of growth and transformation. At <span className='home-homespecial'>Watts Creates Learning</span>, we are committed to making a positive impact and fostering a community where learning and development flourish.
 
 
                                     </p>
