@@ -1,5 +1,7 @@
 import React from 'react'
 import DonnaTestimonial from '../utilities/DonnaTestimonial.jpeg'
+import TestimonialWalidah from '../utilities/TestimonialWalidah.jpg'
+import TestimonialCoordinator from '../utilities/TestimonialCoordinator.png'
 
 const testimonials = [
   {
@@ -7,7 +9,7 @@ const testimonials = [
     author: {
       name: 'Walidah Harris',
       handle: 'Founder and Owner of Trinity Janitorial Services',
-      imageUrl: 'https://ci3.googleusercontent.com/mail-img-att/AGAZnRrnHYfFTwbIWdEIBGi7eCEYCCM68vDu2zlwWrtNy9vf5_zkiKEo5beSJC_0-5yqRtKI71BQGeIa_iBueI59KRxtzT4VXi444pimnxd7nf7OboYc3vGM7miTUG2V4CXwcAoQVAZdT239AwoH8qOcLHSAQ4zqFmS60eBDSmSm0mi9SGlSyLhHEyWrYUAkymHDmV6dfPcjr9m42RwX63hoMAsLvUv4pU0Pnw71LMYBj7S0CQk_a4wTedPyeOOd6GoLW9AkuPh1nDjBCNEjIPtFZux-wMmbo4IJ98q7eN6wmNxhebDjHgDmuwfBPci-MCHGFUAl60LdWWaUN_KGCoo5T3yQyiprqifT3tecJ3oZxwK39s227QxLHoHdE2Tn0dwGFDzqKSyMu_IwgBCc4IC5QoUYgkgow7KI-AGkj_F86YKdr17oOKsZCw_8wqWgwHL8RypJ6qK7denYTw4Th6ynFf7JccX303G4LrQvMW77SKfFGDEh7v2pDToAQA8Eu62ybeIScbWLY34VmfxsHtr1fdIYDu4RMScQ2mWmIFY0tz5F2yyCPT-jMNZGKma-M7lG5alwwR4oli6Y6xiYjprt_RkcWV9H1Mkxfcs6UvcmFILKOxN5mtF9mpWnynhGXw2Qq31aLkzArRMGxdBCa0V9e-tZRzyUTWztuDAKVpW7H2RnEndBXSCx2jA3nTjap3NlS4-ktftxV7PmazX1QAd5yoSnaO6iGyNWKYyN057SdZFkH3J47737DZHtq-DznCI6qbZPyB3LXcZsOS6FZE80hu3S1BPnhWuGUHtd4yHzwhcvh8K7CvK_PMDbJWiWy4qB--KN2zCGcJOERaPy_coz2WogWeVjhCL0ClNkfSdfRoEdlIS60h_f9GZkvKFCjBx7ss8TqBhxjalT5tlfD0jr195XLvrm9eW6CUvWdsLgGQO1Y3j7qg0fAQ7iosWlmx1IxJn_1JCurSHWVqwi0hY3SrnL6v3va0ap124YTaZ8efrrFhuswUE48mFKLZZh-d8YPnK2cEzLFWx_ru6ZN5dMdvuUjPt90EOBOZPcHtVI4yrVahGU4njpcZwOWUQ=s0-l75-ft',
+      imageUrl: TestimonialWalidah,
     },
   },
   {
@@ -15,7 +17,7 @@ const testimonials = [
     author: {
       name: 'Parent University Coordinator',
       handle: 'Learning Community Center Of North Omaha',
-      imageUrl: 'https://ci3.googleusercontent.com/mail-img-att/AGAZnRqQaItQW3eaSSJ2I3DQXm5hEYB0AxN_dufoVsT53hginVW6nAl1lyQGvHPTu2yffCa-Z2H9pPnZsW6DAK3rQeRPXVz_eN8CPbTucvWbl9rUYHOOp8z3g_Tq2Mi8G_gwV7NYNMj8qP0Us4p8AZhjK9XzGId9fLQcv_uGJP3Y17ybZSduP5CxtbYtqy9I3E0ias8OBuF2tV3sc-UWZyf-a7bW9CrQVvYEn3YC6KHv6U2qKsOt6TsxYuw74dpnnB5NP7yS82qdTYIRFQqROEkFkGFvcfNhogB3WhdzgwFwgdkVVBgsv4dUaCmR6D5wFee9EMkjlhfCsCz-6TFi2uM6iOZNXurhdMxUEr1Z4_0RBcyzjdzcy90yKChxFCr68x3Cj4KYyJjT36QL0nfuH7qi1ttrFm5ARe_qqlndlRsUrvSkH8HskArDFZUex91ZXmVImVr1z1H5VflhGT0_GncaGIZfeGT4q4P_mReCvj-Emz59CrxceNlpPuo3wt3_CCeIgdW6zJKBb52q7qaVOdriRH_f83Y2Se3XAPL64eI8-mqh5OND_5nUsGvLbs0azcsw7VQsyKaL-1HOw0lSX9f7C7klBc9HIkuImAe5bp798-Ini-Bab25bA1-Htf41ZRnpi6X8g9te4Ie0k0bU1LfPJfb44ErB-wqzERtvYs6gJzAUSTmprS45Rrv8fkBJ9M8Ty-gn5_K9Ha7Zgot5N0bxBbb_EoSHlBX-NCp2ils-MXvXAlOVplnd7hYFl2jMeyP3daqCabDxL-Mm13YcCcUiHHgULYguYhIglVxoCcVDtnnT4T7z6jhfTG0VZ4jKxtlc6WbZ57RLA2Cym2dryrz9rmWuaXQhQ5Ej-2gPZpT3xD6yeZ6WJ3gh1WuyfpOuJ_xs_icDux4jRKbUWFtJN6kGMf6F_wo7-jD3ILcwGZnnHBpK02Z2ommBiwfDnZTS7Sjay1ZXU-KSZ-iKPTazEcTtHI-IIDE5SXKjmoUQEGUb3adZIJ-ONrNOClJYv7emxuzm01YBQxSiirZ1sF1i9nKTo7xITGpajA8fE_3TSZ6xnpHU4S5pica7XtTkPF2s=s0-l75-ft',
+      imageUrl: TestimonialCoordinator,
     },
   },
   // More testimonials...
@@ -48,7 +50,7 @@ function Testimonials() {
                     <p>{`“${testimonial.body}”`}</p>
                   </blockquote>
                   <figcaption className="mt-6 flex items-center gap-x-4">
-                    <img alt="" src={testimonial.author.imageUrl} className="h-10 w-10 rounded-full bg-gray-50" />
+                    <img alt="" src={testimonial.author.imageUrl} className="h-16 w-16 rounded-full bg-gray-50" />
                     <div>
                       <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
                       <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
