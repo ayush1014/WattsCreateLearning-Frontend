@@ -231,7 +231,7 @@ export default function Contact() {
                                 <rect width="100%" height="100%" strokeWidth={0} fill="url(#83fd4e5a-9d52-42fc-97b6-718e5d7ee527)" />
                             </svg>
                         </div>
-                        <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Get in <span className='home-special-two'>touch</span></h2>
+                        <h2 style={{ fontFamily: 'Playfair' }} className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">Get in <span className='home-special-two'>touch</span></h2>
                         <p className="mt-6 text-lg leading-8 text-gray-600">
 
                         </p>

@@ -259,7 +259,7 @@ export default function Services() {
               <div className="absolute bottom-0 left-3/4 top-0 hidden w-screen bg-gray-50 lg:block" />
               <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
                 <div>
-                  <h3 className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl">Our <span className='home-special'>Services</span></h3>
+                  <h3 className="mt-2 text-5xl font-bold leading-8 tracking-tight text-gray-900 sm:text-7xl">Our <span className='home-special'>Services</span></h3>
                 </div>
               </div>
               <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -370,8 +370,8 @@ export default function Services() {
                 {/* </div> */}
                 <div>
                   <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
-                    <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-                      What Sets <span className='home-special'>Us Apart:</span>
+                    <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                      What Sets <span className='home-special'>Us Apart</span>
                     </h1>
                     <div className="max-w-xl">
                       <ol className="mt-6 list-decimal">

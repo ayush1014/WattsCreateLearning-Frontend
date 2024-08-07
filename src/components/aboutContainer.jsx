@@ -416,7 +416,7 @@ export default function AboutContainer() {
                 {/* Content section */}
                 <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
                     <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-                        <h2 style={{ fontFamily: 'Playfair' }} className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">About <span style={{ color: 'rgba(214,165,187)' }}>Us</span></h2>
+                        <h2 style={{ fontFamily: 'Playfair' }} className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">About <span style={{ color: 'rgba(214,165,187)' }}>Us</span></h2>
                         <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
                             <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
                                 {/* <span className='text-xl mb-2 font-semibold tracking-tight text-gray-900 sm:text-2xl'></span> */}
@@ -451,7 +451,7 @@ export default function AboutContainer() {
 
                 {/* Image section */}
                 <div className="mt-8 sm:mt-24 px-8 xl:mx-auto xl:max-w-7xl xl:px-8">
-                    <h2 style={{ fontFamily: 'playfair' }} className="text-3xl mb-12 font-bold tracking-tight text-gray-900 sm:text-5xl">Our Founder <span className='founderName' style={{ color: 'rgba(214,165,187)', fontSize: '110%' }}>Fallon Watts</span></h2>
+                    <h2 style={{ fontFamily: 'playfair' }} className="text-5xl mb-12 font-bold tracking-tight text-gray-900 sm:text-7xl">Our Founder <span className='founderName' style={{ color: 'rgba(214,165,187)', fontSize: '110%' }}>Fallon Watts</span></h2>
                     <img
                         src={WattsHeroImg}
                         alt=""
@@ -476,7 +476,7 @@ export default function AboutContainer() {
                     <div className="mx-auto max-w-max lg:max-w-7xl">
                         <div className="relative z-10 mb-8 md:mb-2 md:px-6">
                             <div className="max-w-prose text-base lg:max-w-none">
-                                <p className="mt-2 text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl">
+                                <p className="mt-2 text-5xl font-bold leading-8 tracking-tight text-gray-900 sm:text-7xl">
                                     Our <span style={{ color: 'rgba(214,165,187)' }}>Approach</span>
                                 </p>
                             </div>

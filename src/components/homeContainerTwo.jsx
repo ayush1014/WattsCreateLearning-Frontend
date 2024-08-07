@@ -122,7 +122,7 @@ export default function HomeContainerTwo() {
                                             <BriefcaseIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-2 font-bold tracking-tight text-gray-600">Our <span style={{ fontSize: '135%', color: '#C3BAB0' }}>Purpose</span></h3>
+                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-4xl sm:text-6xl mt-2 font-bold tracking-tight text-gray-600">Our <span style={{ fontSize: '135%', color: '#C3BAB0' }}>Purpose</span></h3>
                                     <p style={{ fontSize: '135%', fontWeight: '250' }} className="mt-2 text-xl lg:text-2xl text-gray-600">
                                         Watts Creates Learning is a professional development, consulting, and education service provider. We specialize in offering a range of services, including but not limited to personal & professional development workshops, program evaluation, team builders, and wellness retreats.
                                     </p>
@@ -131,7 +131,7 @@ export default function HomeContainerTwo() {
                                             <ArrowTrendingUpIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-600">Our<span style={{ fontSize: '135%', color: '#C3BAB0' }}> Mission</span></h3>
+                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-4xl sm:text-6xl mt-5 font-bold tracking-tight text-gray-600">Our<span style={{ fontSize: '135%', color: '#C3BAB0' }}> Mission</span></h3>
                                     <p style={{ fontSize: '135%', fontWeight: '250' }} className="mt-2 text-xl lg:text-2xl text-gray-600">
                                         Empowering individuals, families, communities and organizations to build upon their goodness and potential. We strive to be catalysts for positive change in relationships, careers, and businesses.
                                     </p>
@@ -140,7 +140,7 @@ export default function HomeContainerTwo() {
                                             <ScaleIcon className="h-8 w-8 text-white" aria-hidden="true" />
                                         </span>
                                     </div> */}
-                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-2xl lg:text-4xl mt-5 font-bold tracking-tight text-gray-600">Our <span style={{ fontSize: '135%', color: '#C3BAB0' }}>Core Values</span></h3>
+                                    <h3 style={{ fontFamily: 'Playfair' }} className="text-4xl sm:text-6xl mt-5 font-bold tracking-tight text-gray-600">Our <span style={{ fontSize: '135%', color: '#C3BAB0' }}>Core Values</span></h3>
                                     {/* <ul className="mt-2 text-lg text-gray-100" style={{ listStyleType: 'circle' }}> */}
                                     <ul style={{ fontSize: '135%', fontWeight: '250' }} className="mt-2 text-lg sm:text-xl text-gray-600">
                                         <li>Leading with Love</li>
