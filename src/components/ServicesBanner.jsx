@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 // import WelcomeBanner from '../utilities/WelcomeBanner.png';
 // import WelcomeBanner2 from '../utilities/WelcomeBanner2.jpg';
-import ServiceBanner from '../utilities/ServicesBanner.png';
+import ServiceBanner from '../utilities/ServicesBanner.jpg';
 
 function ServicesBanner() {
     return (

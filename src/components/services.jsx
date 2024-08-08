@@ -82,9 +82,10 @@ export default function Services() {
     },
     {
       name: 'Instagram',
-      href: '#',
+      href: 'https://www.instagram.com/watts_creates_learning/',
       icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props} onClick={handleInstaShow}>
+        // <svg fill="currentColor" viewBox="0 0 24 24" {...props} onClick={handleInstaShow}>
+        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
             d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
@@ -152,7 +153,7 @@ export default function Services() {
                       key={icon.name}
                       href={icon.href}
                       className="-m-1.5 p-1.5"
-                      {...(icon.name === 'LinkedIn' ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                      {...(icon.name === 'Facebook' ? {} : { target: "_blank", rel: "noopener noreferrer" })}
                     >
                       {icon.icon({ className: "h-6 w-6" })}
                     </a>
@@ -241,7 +242,7 @@ export default function Services() {
           </Modal.Footer>
         </Modal>
 
-        <Modal show={instaShow} onHide={handleInstaClose}>
+        {/* <Modal show={instaShow} onHide={handleInstaClose}>
           <Modal.Header closeButton>
             <SocialIcon network="instagram" />
             <Modal.Title className='m-auto'><span style={{ color: 'rgb(224,41,98)', fontWeight: '600' }}>Instagram</span> Update</Modal.Title>
@@ -252,7 +253,7 @@ export default function Services() {
               Close
             </Button>
           </Modal.Footer>
-        </Modal>
+        </Modal> */}
         <div className='ServicesContainerOne'>
           <div className="mt-4 overflow-hidden bg-white">
             <div className="relative mx-auto max-w-7xl px-6 py-12 lg:px-8">
@@ -262,7 +263,7 @@ export default function Services() {
                   <h3 className="mt-2 text-5xl font-bold leading-8 tracking-tight text-gray-900 sm:text-7xl">Our <span className='home-special'>Services</span></h3>
                 </div>
               </div>
-              <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
+              <div className="mt-2 lg:grid lg:grid-cols-2 lg:gap-8">
                 <div className="relative lg:col-start-2 lg:row-start-1">
                   <svg
                     fill="none"
@@ -302,13 +303,13 @@ export default function Services() {
                     </figure>
                   </div> */}
                 </div>
-                <div className="mt-8 lg:mt-0">
+                <div className="mt-2 sm:mt-0">
                   <div className="mx-auto max-w-prose text-base lg:max-w-none">
                     <p className="text-xl text-gray-700">
                       Unlock Your Potential with Our Expert Services! At Watts Creates Learning, we are dedicated to helping individuals, communities,  and organizations thrive through our comprehensive range of services. Whether you’re a parent, a young woman, an academic institution, or a business, we have the expertise to support your growth and success.  Experience the difference expert guidance can make in unlocking your full potential.
                     </p>
                   </div>
-                  <div className="prose prose-indigo mx-auto mt-5 text-gray-900 lg:col-start-1 lg:row-start-1 lg:max-w-none">
+                  <div className="prose prose-indigo mx-auto mt-3 text-gray-900 lg:col-start-1 lg:row-start-1 lg:max-w-none">
                     <AccordionItem title={<span>Workshops <span className="special-and">&</span>    Training</span>}>
                       <li><span className='subheading'>Leading With Love & Strength:</span> The six-week workshop explores the relationship between parenting, leadership, and personal strengths. Participants will gain insights into using their Clifton Strengths to excel as individuals, parents, and leaders.</li>
                       <li><span className='subheading'>EmpowerHER:</span> The four-week workshop introduces girls to the Clifton Strengths Explorer assessment. Helping them leverage their unique strengths for success in academics, social interactions, and future careers. It aims to empower them to become confident, self-aware individuals who positively impact their lives and communities.</li>
@@ -374,7 +375,7 @@ export default function Services() {
                       What Sets <span className='home-special'>Us Apart</span>
                     </h1>
                     <div className="max-w-xl">
-                      <ol className="mt-6 list-decimal">
+                      <ol className="mt-3 list-decimal">
                         <AccordionItem title={<span>Extensive Expertise  <span className="special-and">&</span> Experience</span>}>
                           <li><span className='subheading'>Leadership and Knowledge:</span> Founded by Fallon Watts, an accomplished higher education professional with over a decade of experience, our expertise spans course development, program evaluation, grant management, data analysis, and student affairs.</li>
                           <li><span className='subheading'>Proven Track Record:</span> Fallon’s achievements include designing impactful student programs and courses, leading committee work such as the Committee on The Status of Women, and implementing efficient administrative processes.</li>
@@ -397,7 +398,7 @@ export default function Services() {
                       </ol>
                     </div>
                   </div>
-                  <div className="mt-10 flex">
+                  <div className="mt-4 flex">
                     {/* <a href="mailto:create@wattscreates.com" className="text-xl font-semibold leading-7" style={{ color: '#C3BAB0' }}> */}
                     <a href="/contact" className="text-xl font-semibold leading-7" style={{ color: 'rgba(35,71,130)' }}>
                       Learn more about our company <span aria-hidden="true">&rarr;</span>

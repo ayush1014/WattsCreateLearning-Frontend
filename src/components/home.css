@@ -201,3 +201,9 @@
     font-size: 120%;
     font-weight: 800;
 }
+
+.absolute-bottom {
+    position: absolute;
+    bottom: -1240px;
+    right: -80px;
+}

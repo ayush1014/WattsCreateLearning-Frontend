@@ -68,7 +68,7 @@ export default function HomeContainerTwo() {
                                     height={384}
                                     viewBox="0 0 404 384"
                                     aria-hidden="true"
-                                    className="absolute right-0 top-0 -mr-20 -mt-20 hidden lg:block"
+                                    className="absolute right-0 top-0 -mr-24 -mt-20 hidden lg:block"
                                 >
                                     <defs>
                                         <pattern
@@ -188,9 +188,33 @@ export default function HomeContainerTwo() {
                                     className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                                     src={homeCover}
                                     alt="Customer profile user interface"
+                                    style={{ zIndex: 1 }}
                                 />
+                                <div className="relative lg:col-start-2 lg:row-start-1">
+                                    <svg
+                                        fill="none"
+                                        width={404}
+                                        height={314}
+                                        viewBox="0 0 404 384"
+                                        aria-hidden="true"
+                                        className="absolute-bottom hidden lg:block"
+                                    >
+                                        <defs>
+                                            <pattern
+                                                x={0}
+                                                y={0}
+                                                id="de316486-4a29-4312-bdfc-fbce2132a2c1"
+                                                width={20}
+                                                height={20}
+                                                patternUnits="userSpaceOnUse"
+                                            >
+                                                <rect x={0} y={0} fill="currentColor" width={4} height={4} className="text-gray-200" />
+                                            </pattern>
+                                        </defs>
+                                        <rect fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" width={404} height={384} />
+                                    </svg>
+                                </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>

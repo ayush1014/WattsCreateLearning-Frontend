@@ -8,6 +8,7 @@ import Logo from '../utilities/wattsLogo.png'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { SocialIcon } from 'react-social-icons'
+import SendNotification from './SendNotification'
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -20,11 +21,71 @@ export default function Contact() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [facebookShow, setFacebookShow] = useState(false);
     const [instaShow, setInstaShow] = useState(false);
+    const [notificationShow, setNotificationShow] = useState(false);
 
     const handleFacebookClose = () => setFacebookShow(false);
     const handleFacebookShow = () => setFacebookShow(true);
     const handleInstaClose = () => setInstaShow(false);
     const handleInstaShow = () => setInstaShow(true);
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+        message: '',
+    });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = async (event) => {
+        setNotificationShow(true);
+        // Set a timer to hide the notification after 5 seconds
+        setTimeout(() => {
+            setNotificationShow(false);
+        }, 5000);
+        setFormData({
+            firstName: '',
+            lastName: '',
+            email: '',
+            phoneNumber: '',
+            message: '',
+        });
+        console.log('inside the function');
+        event.preventDefault();  // Correct this line
+        const data = {
+            firstName: event.target['first-name'].value,
+            lastName: event.target['last-name'].value,
+            email: event.target.email.value,
+            phoneNumber: event.target['phone-number'].value,
+            message: event.target.message.value,
+        };
+
+        console.log('Data to be sent:', data);
+
+        fetch('https://watts-creates-learning-backend.vercel.app/send-email', {
+        // fetch('http://localhost:8000/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Message sent:', data);
+                alert(data.msg);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+    };
+
 
     const socialIcons = [
         {
@@ -42,9 +103,10 @@ export default function Contact() {
         },
         {
             name: 'Instagram',
-            href: '#',
+            href: 'https://www.instagram.com/watts_creates_learning/',
             icon: (props) => (
-                <svg fill="currentColor" viewBox="0 0 24 24" {...props} onClick={handleInstaShow}>
+                // <svg fill="currentColor" viewBox="0 0 24 24" {...props} onClick={handleInstaShow}>
+                <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
                     <path
                         fillRule="evenodd"
                         d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
@@ -108,7 +170,7 @@ export default function Contact() {
                                 key={icon.name}
                                 href={icon.href}
                                 className="-m-1.5 p-1.5"
-                                {...(icon.name === 'LinkedIn' ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                                {...(icon.name === 'Facebook' ? {} : { target: "_blank", rel: "noopener noreferrer" })}
                             >
                                 {icon.icon({ className: "h-6 w-6" })}
                             </a>
@@ -192,7 +254,7 @@ export default function Contact() {
                 </Modal.Footer>
             </Modal>
 
-            <Modal show={instaShow} onHide={handleInstaClose}>
+            {/* <Modal show={instaShow} onHide={handleInstaClose}>
                 <Modal.Header closeButton>
                     <SocialIcon network="instagram" />
                     <Modal.Title className='m-auto'><span style={{ color: 'rgb(224,41,98)', fontWeight: '600' }}>Instagram</span> Update</Modal.Title>
@@ -203,7 +265,7 @@ export default function Contact() {
                         Close
                     </Button>
                 </Modal.Footer>
-            </Modal>
+            </Modal> */}
             <div className="mx-auto grid max-w-full grid-cols-1 lg:grid-cols-2">
                 <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
                     <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -292,7 +354,8 @@ export default function Contact() {
                         </dl>
                     </div>
                 </div>
-                <form action="#" method="POST" style={{ backgroundColor: '#626D7B' }} className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                <form onSubmit={handleSubmit} style={{ backgroundColor: '#626D7B' }} className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+                    {notificationShow && <SendNotification />}
                     <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
                         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
@@ -302,10 +365,12 @@ export default function Contact() {
                                 <div className="mt-2.5">
                                     <input
                                         type="text"
-                                        name="first-name"
+                                        name="firstName"
                                         id="first-name"
                                         autoComplete="given-name"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        value={formData.firstName}
+                                        onChange={handleInputChange}
                                     />
                                 </div>
                             </div>
@@ -316,10 +381,12 @@ export default function Contact() {
                                 <div className="mt-2.5">
                                     <input
                                         type="text"
-                                        name="last-name"
+                                        name="lastName"
                                         id="last-name"
                                         autoComplete="family-name"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        value={formData.lastName}
+                                        onChange={handleInputChange}
                                     />
                                 </div>
                             </div>
@@ -334,6 +401,8 @@ export default function Contact() {
                                         id="email"
                                         autoComplete="email"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        value={formData.email}
+                                        onChange={handleInputChange}
                                     />
                                 </div>
                             </div>
@@ -344,10 +413,12 @@ export default function Contact() {
                                 <div className="mt-2.5">
                                     <input
                                         type="tel"
-                                        name="phone-number"
+                                        name="phoneNumber"
                                         id="phone-number"
                                         autoComplete="tel"
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                        value={formData.phoneNumber}
+                                        onChange={handleInputChange}
                                     />
                                 </div>
                             </div>
@@ -362,6 +433,8 @@ export default function Contact() {
                                         rows={4}
                                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                         defaultValue={''}
+                                        value={formData.message}
+                                        onChange={handleInputChange}
                                     />
                                 </div>
                             </div>
@@ -374,6 +447,7 @@ export default function Contact() {
                             >
                                 Send message
                             </button>
+
                         </div>
                     </div>
                 </form>

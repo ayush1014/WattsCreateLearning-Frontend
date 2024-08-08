@@ -33,12 +33,12 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-8 sm:py-8">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
           {/* <h2 style={{ color: 'rgba(35,71,130)'}} className="text-xl font-semibold leading-8 tracking-tight">Testimonials</h2> */}
           <p className="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            We have worked with some <span style={{ color: 'rgba(35,71,130)', fontSize: '120%', fontWeight: '600' }}>amazing people</span>
+            We have worked with some <span style={{ color: 'rgba(35,71,130)', fontSize: '120%', fontWeight: '600' }}>amazing people !</span>
           </p>
         </div>
         <div className="mx-auto max-w-2xl lg:max-w-none">
@@ -53,7 +53,7 @@ function Testimonials() {
                     <img alt="" src={testimonial.author.imageUrl} className="h-16 w-16 rounded-full bg-gray-50" />
                     <div>
                       <div className="font-semibold text-gray-900">{testimonial.author.name}</div>
-                      <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                      <div className="text-gray-600">{`${testimonial.author.handle}`}</div>
                     </div>
                   </figcaption>
                 </figure>
