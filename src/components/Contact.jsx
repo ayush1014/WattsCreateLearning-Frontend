@@ -188,7 +188,7 @@ export default function Contact() {
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-xl font-medium leading-6 text-gray-700 nav-item">
+                            <a key={item.name} href={item.href} style={{textDecoration: 'none'}} className="text-xl font-medium leading-6 text-gray-700 nav-item ">
                                 {item.name}
                             </a>
                         ))}

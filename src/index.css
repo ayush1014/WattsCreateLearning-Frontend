@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: Playfair;
-  }
+body {
+  font-family: Playfair;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+a:hover{
+  color: black;
+}
