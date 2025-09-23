@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Watts Creates Learning - Professional Development & Education Services</title>
+    <link>https://www.wattscreates.com</link>
+    <description>Stay updated with the latest from Watts Creates Learning. Professional development workshops, educational consulting, team building activities, and wellness retreats. Founded by Fallon Watts, empowering individuals and organizations through strengths-based learning.</description>
+    <language>en-us</language>
+    <copyright>© 2021-2025 Watts Creates Learning. All rights reserved.</copyright>
+    <managingEditor>create@wattscreates.com (Watts Creates Learning)</managingEditor>
+    <webMaster>create@wattscreates.com (Watts Creates Learning)</webMaster>
+    <lastBuildDate>Mon, 23 Sep 2025 00:00:00 GMT</lastBuildDate>
+    <category>Education</category>
+    <category>Professional Development</category>
+    <category>Training</category>
+    <category>Consulting</category>
+    <generator>Watts Creates Learning RSS Generator</generator>
+    <docs>https://www.wattscreates.com/rss-docs</docs>
+    <cloud domain="www.wattscreates.com" port="80" path="/rss-cloud" registerProcedure="pingMe" protocol="soap"/>
+    <ttl>1440</ttl>
+    <image>
+      <url>https://www.wattscreates.com/wattsLogo.png</url>
+      <title>Watts Creates Learning</title>
+      <link>https://www.wattscreates.com</link>
+      <width>144</width>
+      <height>144</height>
+      <description>Watts Creates Learning - Professional Development & Education Services</description>
+    </image>
+    <atom:link href="https://www.wattscreates.com/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Welcome to Watts Creates Learning - Professional Development Excellence</title>
+      <link>https://www.wattscreates.com</link>
+      <description>Discover how Watts Creates Learning transforms individuals and organizations through professional development workshops, educational consulting, and strengths-based learning approaches. Founded in 2021 by Fallon Watts, we specialize in empowering growth through innovative training solutions.</description>
+      <content:encoded><![CDATA[
+        <h2>Watts Creates Learning: Empowering Professional Growth</h2>
+        <p>Welcome to <strong>Watts Creates Learning</strong>, where professional development meets innovation. Our comprehensive suite of services includes:</p>
+        <ul>
+          <li><strong>Professional Development Workshops</strong> - Including our signature "Leading With Love & Strength" and "EmpowerHER" programs</li>
+          <li><strong>Program Evaluation & Data Analysis</strong> - Expert assessment and strategic insights</li>
+          <li><strong>Team Building Activities</strong> - Strengthening organizational collaboration</li>
+          <li><strong>Wellness Retreats</strong> - Holistic approaches to professional well-being</li>
+        </ul>
+        <p>Founded by <em>Fallon Watts</em>, an experienced higher education professional and strengths consultant, Watts Creates Learning has been transforming organizations since 2021.</p>
+        <p>Search for <strong>"Watts"</strong>, <strong>"Watts Creates"</strong>, or <strong>"Watts Creates Learning"</strong> to discover how we can elevate your professional development journey.</p>
+      ]]></content:encoded>
+      <pubDate>Mon, 23 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.wattscreates.com</guid>
+      <category>Professional Development</category>
+      <category>Education Services</category>
+      <category>Watts Creates Learning</category>
+    </item>
+    
+    <item>
+      <title>Professional Development Services - Watts Creates Exceptional Training Programs</title>
+      <link>https://www.wattscreates.com/services</link>
+      <description>Explore the comprehensive professional development services offered by Watts Creates Learning. From workshops and training to program evaluation and team building, discover how Watts Creates transforms organizations through expert educational consulting.</description>
+      <content:encoded><![CDATA[
+        <h2>Comprehensive Professional Development Services</h2>
+        <p><strong>Watts Creates Learning</strong> offers a full spectrum of professional development services designed to empower individuals and organizations:</p>
+        <h3>Our Core Services Include:</h3>
+        <ul>
+          <li><strong>Workshops & Training</strong> - Interactive learning experiences</li>
+          <li><strong>Program Evaluation</strong> - Data-driven assessment and improvement</li>
+          <li><strong>Course Development & Facilitation</strong> - Customized educational solutions</li>
+          <li><strong>Team Building</strong> - Collaborative excellence programs</li>
+          <li><strong>Wellness Retreats</strong> - Holistic professional development</li>
+        </ul>
+        <p>When you search for professional development services, <em>Watts Creates Learning</em> delivers exceptional results through our proven methodologies and expert facilitation.</p>
+      ]]></content:encoded>
+      <pubDate>Mon, 23 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.wattscreates.com/services</guid>
+      <category>Training Services</category>
+      <category>Professional Development</category>
+      <category>Watts Creates</category>
+    </item>
+    
+    <item>
+      <title>About Watts Creates Learning - Our Mission and Professional Development Expertise</title>
+      <link>https://www.wattscreates.com/about</link>
+      <description>Learn about Watts Creates Learning's mission, founder Fallon Watts, and our commitment to empowering individuals and organizations through strengths-based professional development and educational consulting services.</description>
+      <content:encoded><![CDATA[
+        <h2>About Watts Creates Learning</h2>
+        <p><strong>Watts Creates Learning</strong> was founded in 2021 with a clear mission: to empower individuals and organizations through innovative professional development and educational consulting.</p>
+        <h3>Our Founder</h3>
+        <p><em>Fallon Watts</em>, our founder and CEO, brings over a decade of experience in higher education and student affairs. Her expertise spans:</p>
+        <ul>
+          <li>Course development and program evaluation</li>
+          <li>Grant management and data analysis</li>
+          <li>Strengths-based leadership development</li>
+          <li>Organizational consulting and training</li>
+        </ul>
+        <p>When organizations search for <strong>"Watts"</strong> professional development solutions, they discover our commitment to creating learning opportunities that transform careers and businesses.</p>
+      ]]></content:encoded>
+      <pubDate>Mon, 23 Sep 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://www.wattscreates.com/about</guid>
+      <category>Company Information</category>
+      <category>Professional Development</category>
+      <category>Watts</category>
+    </item>
+  </channel>
+</rss>

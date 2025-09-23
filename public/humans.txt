@@ -1,0 +1,31 @@
+# Watts Creates Learning - Human Contributors
+
+/* TEAM */
+Founder & CEO: Fallon Watts
+Higher Education Professional & Strengths Consultant
+
+/* SITE */
+Last update: 2024/01/01
+Language: English
+Doctype: HTML5
+IDE: Visual Studio Code
+
+/* COMPANY */
+Organization: Watts Creates Learning
+Location: United States
+Founded: 2021
+Mission: Empowering individuals and organizations to build upon their inherent strengths and potential
+
+/* KEYWORDS */
+Primary: Watts Creates Learning, Watts Creates, Watts
+Services: Professional Development, Education Services, Workshops, Training, Consulting
+Specialties: Program Evaluation, Team Building, Wellness Retreats, Leadership Development
+
+/* CONTACT */
+Website: https://www.wattscreates.com
+LinkedIn: https://www.linkedin.com/company/watts-creates-learning/
+Facebook: https://www.facebook.com/wattscreateslearning
+
+/* THANKS */
+Built with passion for education and personal development.
+Creating learning opportunities for all.

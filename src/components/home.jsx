@@ -14,6 +14,7 @@ import Footer from './footer'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { SocialIcon } from 'react-social-icons'
+import SEOHead from './SEOHead'
 
 
 
@@ -100,6 +101,12 @@ export default function Home() {
 
     return (
         <div className='test'>
+            <SEOHead 
+                title="Watts Creates Learning | Professional Development & Education Services"
+                description="Watts Creates Learning is a premier professional development, consulting, and education service provider. We specialize in workshops, program evaluation, team building, and wellness retreats for individuals, communities, and organizations."
+                keywords="Watts Creates Learning, Watts Creates, Watts, professional development, education services, workshops, training, consulting, program evaluation, team building, wellness retreats, coaching, leadership development"
+                canonicalUrl="https://www.wattscreates.com"
+            />
             <div>
                 <div className='homeContainerOne'>
                     <div className="bg-white">

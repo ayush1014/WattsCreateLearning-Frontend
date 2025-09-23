@@ -18,6 +18,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { SocialIcon } from 'react-social-icons'
 import Testimonials from './Testimonials'
+import SEOHead from './SEOHead'
 
 const AccordionItem = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -131,6 +132,12 @@ export default function Services() {
 
   return (
     <div className='test'>
+      <SEOHead 
+        title="Services - Watts Creates Learning | Professional Development & Training"
+        description="Explore Watts Creates Learning's comprehensive services including professional development workshops, program evaluation, team building, wellness retreats, and educational consulting. Transform your organization with our expert training solutions."
+        keywords="Watts Creates services, professional development workshops, program evaluation, team building activities, wellness retreats, training services, educational consulting, leadership development, corporate training"
+        canonicalUrl="https://www.wattscreates.com/services"
+      />
       <div>
         <div className='homeContainerOne'>
           <div className="bg-white">

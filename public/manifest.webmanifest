@@ -1,0 +1,99 @@
+{
+  "name": "Watts Creates Learning",
+  "short_name": "Watts Creates",
+  "description": "Premier professional development, consulting, and education service provider. Watts Creates Learning specializes in workshops, program evaluation, team building, and wellness retreats for individuals, communities, and organizations.",
+  "url": "https://www.wattscreates.com",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#626D7B",
+  "background_color": "#ffffff",
+  "lang": "en-US",
+  "dir": "ltr",
+  "categories": ["education", "business", "productivity", "lifestyle"],
+  "screenshots": [
+    {
+      "src": "wattsLogo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Watts Creates Learning - Professional Development Services"
+    }
+  ],
+  "icons": [
+    {
+      "src": "wattsLogo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "wattsLogo.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "wattsLogo.png",
+      "type": "image/png", 
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 480
+  },
+  "shortcuts": [
+    {
+      "name": "About Watts Creates",
+      "short_name": "About",
+      "description": "Learn about Watts Creates Learning's mission and services",
+      "url": "/about",
+      "icons": [
+        {
+          "src": "wattsLogo.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Our Services",
+      "short_name": "Services",
+      "description": "Explore professional development and training services",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "wattsLogo.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with Watts Creates Learning",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "wattsLogo.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "iarc_rating_id": "",
+  "id": "/",
+  "protocol_handlers": [],
+  "share_target": {
+    "action": "/contact",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}

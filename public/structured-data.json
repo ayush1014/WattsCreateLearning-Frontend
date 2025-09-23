@@ -1,0 +1,164 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.wattscreates.com/#organization",
+      "name": "Watts Creates Learning",
+      "alternateName": ["Watts Creates", "WCL", "Watts"],
+      "url": "https://www.wattscreates.com",
+      "sameAs": [
+        "https://www.facebook.com/wattscreateslearning",
+        "https://www.linkedin.com/company/watts-creates-learning/"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.wattscreates.com/wattsLogo.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://www.wattscreates.com/wattsLogo.png"
+      },
+      "description": "Watts Creates Learning is a premier professional development, consulting, and education service provider. We specialize in workshops, program evaluation, team building, and wellness retreats for individuals, communities, and organizations.",
+      "founder": {
+        "@type": "Person",
+        "name": "Fallon Watts",
+        "jobTitle": "Founder & CEO",
+        "description": "Higher Education Professional & Strengths Consultant"
+      },
+      "foundingDate": "2021",
+      "numberOfEmployees": "1-10",
+      "areaServed": "United States",
+      "knowsAbout": [
+        "Professional Development",
+        "Education Services",
+        "Workshops",
+        "Training",
+        "Consulting",
+        "Program Evaluation",
+        "Team Building",
+        "Wellness Retreats",
+        "Leadership Development",
+        "Strengths-Based Learning"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Watts Creates Learning Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Professional Development Workshops",
+              "description": "Comprehensive workshops designed to enhance professional skills and career development including Leading With Love & Strength and EmpowerHER programs."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Program Evaluation & Data Analysis",
+              "description": "Expert evaluation services to assess and improve program effectiveness with detailed data analysis for strategic decision-making."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Team Building Activities",
+              "description": "Interactive team building workshops and activities designed to strengthen collaboration and organizational effectiveness."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Wellness Retreats",
+              "description": "Holistic wellness retreats focusing on personal and professional well-being, stress management, and work-life balance."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.wattscreates.com/#website",
+      "url": "https://www.wattscreates.com",
+      "name": "Watts Creates Learning",
+      "description": "Professional Development & Education Services - Watts Creates Learning specializes in workshops, training, consulting, and wellness retreats.",
+      "publisher": {
+        "@id": "https://www.wattscreates.com/#organization"
+      },
+      "inLanguage": "en-US",
+      "copyrightYear": 2021,
+      "copyrightHolder": {
+        "@id": "https://www.wattscreates.com/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.wattscreates.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.wattscreates.com/#webpage",
+      "url": "https://www.wattscreates.com",
+      "name": "Watts Creates Learning | Professional Development & Education Services",
+      "isPartOf": {
+        "@id": "https://www.wattscreates.com/#website"
+      },
+      "about": {
+        "@id": "https://www.wattscreates.com/#organization"
+      },
+      "description": "Watts Creates Learning is a premier professional development, consulting, and education service provider. We specialize in workshops, program evaluation, team building, and wellness retreats.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.wattscreates.com"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@id": "https://www.wattscreates.com/#organization"
+      }
+    },
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://www.wattscreates.com/#education",
+      "name": "Watts Creates Learning",
+      "url": "https://www.wattscreates.com",
+      "sameAs": [
+        "https://www.facebook.com/wattscreateslearning",
+        "https://www.linkedin.com/company/watts-creates-learning/"
+      ],
+      "description": "Educational organization specializing in professional development, strengths-based learning, and organizational consulting services.",
+      "educationalCredentialAwarded": "Professional Development Certificates",
+      "hasEducationalUse": [
+        "Professional Development",
+        "Leadership Training",
+        "Team Building",
+        "Organizational Development"
+      ],
+      "teaches": [
+        "Strengths-based Leadership",
+        "Professional Development",
+        "Team Collaboration",
+        "Organizational Effectiveness",
+        "Personal Growth",
+        "Career Development"
+      ]
+    }
+  ]
+}

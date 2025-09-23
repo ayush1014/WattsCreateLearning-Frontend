@@ -1,3 +1,25 @@
 # https://www.robotstxt.org/robotstxt.html
+# Robots.txt for Watts Creates Learning
+
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Sitemap location
+Sitemap: https://www.wattscreates.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 1
+
+# Google specific directives
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing specific directives  
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

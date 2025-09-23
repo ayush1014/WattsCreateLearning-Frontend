@@ -7,6 +7,7 @@ import '../components/home.css'
 import HomeCoverPhoto from '../utilities/fallon.jpeg'
 import AboutContainer from './aboutContainer'
 import Footer from './footer'
+import SEOHead from './SEOHead'
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -20,14 +21,20 @@ export default function About() {
 
     return (
         <>
-        <div>
+            <SEOHead 
+                title="About Watts Creates Learning | Our Story & Mission"
+                description="Learn about Watts Creates Learning's mission to provide professional development, consulting, and education services. Founded in 2021, we specialize in empowering individuals and organizations through innovative learning solutions."
+                keywords="About Watts Creates Learning, Watts Creates history, professional development company, education consulting, team building experts, wellness retreat providers"
+                canonicalUrl="https://www.wattscreates.com/about"
+            />
             <div>
-            <AboutContainer/>
+                <div>
+                <AboutContainer/>
+                </div>
+                <div className='mt-72'>
+                <Footer/>
+                </div>
             </div>
-            <div className='mt-72'>
-            <Footer/>
-            </div>
-        </div>
         
         </>
             )

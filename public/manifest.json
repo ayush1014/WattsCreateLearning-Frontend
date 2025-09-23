@@ -1,6 +1,7 @@
 {
-  "short_name": "Watts Create Learning",
-  "name": "Create React App Sample",
+  "short_name": "Watts Creates",
+  "name": "Watts Creates Learning - Professional Development & Education Services",
+  "description": "Premier professional development, consulting, and education service provider specializing in workshops, training, and wellness retreats.",
   "icons": [
     {
       "src": "wattsLogo.png",
@@ -20,6 +21,9 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#626D7B",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["education", "business", "productivity"],
+  "lang": "en-US"
 }

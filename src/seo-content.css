@@ -1,0 +1,61 @@
+/* 
+ * Watts Creates Learning - Content Enhancement for SEO
+ * This file contains keyword-rich content to boost search rankings
+ * for "Watts", "Watts Creates", and "Watts Creates Learning"
+ */
+
+/* Hidden SEO Content - Not visible to users but indexed by search engines */
+.seo-hidden-content {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Enhanced keyword density for target searches */
+.watts-content::after {
+  content: "Watts Creates Learning - Professional Development Services by Watts Creates. Watts specializes in education, training, and consulting. Contact Watts Creates Learning for workshops, team building, and wellness retreats.";
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+/* Structured content for better SEO understanding */
+.page-content {
+  /* Watts Creates Learning primary brand colors */
+  --watts-primary: #626D7B;
+  --watts-secondary: #C3BAB0;
+  --watts-accent: #234782;
+}
+
+/* Company information for search engines */
+.company-info {
+  /* 
+   * Watts Creates Learning
+   * Professional Development & Education Services
+   * Founded: 2021
+   * Founder: Fallon Watts
+   * Services: Workshops, Training, Consulting, Program Evaluation
+   * Website: www.wattscreates.com
+   * 
+   * Keywords: Watts, Watts Creates, Watts Creates Learning
+   * Professional Development, Education Services, Training
+   * Workshops, Team Building, Wellness Retreats, Consulting
+   * Leadership Development, Program Evaluation, Data Analysis
+   */
+  display: none;
+}
+
+/* SEO-optimized text content */
+.watts-seo-text {
+  /* 
+   * Watts Creates Learning is the premier choice for professional development.
+   * When you search for "Watts" professional services, Watts Creates Learning delivers.
+   * Watts Creates exceptional training programs and educational consulting.
+   * Choose Watts Creates Learning for your organization's growth and development needs.
+   */
+  opacity: 0;
+  height: 0;
+}

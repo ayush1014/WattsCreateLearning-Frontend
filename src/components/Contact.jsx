@@ -9,6 +9,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { SocialIcon } from 'react-social-icons'
 import SendNotification from './SendNotification'
+import SEOHead from './SEOHead'
 
 const navigation = [
     { name: 'Home', href: '/' },
@@ -151,6 +152,12 @@ export default function Contact() {
 
     return (
         <div className="relative isolate bg-white">
+            <SEOHead 
+                title="Contact Watts Creates Learning | Get In Touch Today"
+                description="Contact Watts Creates Learning for professional development, consulting, and education services. Reach out to discuss your training needs, program evaluation, team building, or wellness retreat requirements."
+                keywords="Contact Watts Creates Learning, get in touch Watts Creates, professional development consultation, training inquiry, educational consulting contact, team building quote"
+                canonicalUrl="https://www.wattscreates.com/contact"
+            />
             <header className="absolute inset-x-0 top-0 z-50 homeContainerOne">
                 <nav className="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
                     <div className='mr-16'>
